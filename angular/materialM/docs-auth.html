@@ -30,6 +30,7 @@
 </head>
 
 <body>
+
   <div class="d-lg-flex align-items-center px-4 py-3 bg-dark premium-header">
     <h4 class="text-white mb-0">Flexy Pro Version is Available!</h4>
     <div class="ms-auto mt-4 mt-md-0">
@@ -75,7 +76,6 @@
                   class="ti ti-external-link me-2 fs-4"></i>Bootstrap
                 Preview</a>
             </li>
-
           </ul>
         </div>
 
@@ -110,7 +110,6 @@
                   class="ti ti-external-link me-2 fs-4"></i>Bootstrap
                 Preview</a>
             </li>
-
           </ul>
         </div>
       </div>
@@ -137,7 +136,7 @@
             <a href="index.html">
               <b class="logo-icon">
                 <!-- Dark Logo icon -->
-                <img src="../../styles/dist/images/flexy/logo-dark.svg" alt="homepage" class="dark-logo" />
+                <img src="../../styles/dist/images/materialM/logo-dark.svg" alt="homepage" class="dark-logo" />
               </b>
               <!--End Logo icon -->
             </a>
@@ -227,8 +226,6 @@
                     Authentication
                     <span class="badge bg-secondary f-s-12">PRO</span></a>
                 </li>
-                <!--Support-->
-
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
                       class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
@@ -258,7 +255,7 @@
               <a href="index.html">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
-                  <img src="../../styles/dist/images/flexy/logo-dark.svg" alt="homepage" class="dark-logo" />
+                  <img src="../../styles/dist/images/materialM/logo-dark.svg" alt="homepage" class="dark-logo" />
                 </b>
                 <!--End Logo icon -->
               </a>
@@ -349,7 +346,7 @@
                       Authentication
                       <span class="badge bg-secondary f-s-12">PRO</span></a>
                   </li>
-                  <!--Support-->
+
                   <li class="sidebar-item">
                     <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
                         class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
@@ -386,7 +383,7 @@
           <a href="index.html">
             <b class="logo-icon d-lg-none d-block">
               <!-- Dark Logo icon -->
-              <img src="../../styles/dist/images/flexy/logo-dark.svg" alt="homepage" class="dark-logo" />
+              <img src="../../styles/dist/images/materialM/logo-dark.svg" alt="homepage" class="dark-logo" />
             </b>
             <!--End Logo icon -->
           </a>
@@ -407,244 +404,124 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
-          <h4 class="mb-4 pb-2">Theme Settings</h4>
-
+          <h4 class="mb-4 pb-2">Authentication</h4>
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">Customizer Usage</h4>
-
-              <div class="row mt-4">
-                <div class="col-md-4">
-                  <img alt="customizer" class="border rounded img-fluid"
-                    src="../../styles/dist/images/flexy/app-customizer.jpg" />
-                </div>
-                <div class="col-md-8">
-                  <p class="fs-6 text-muted">
-                    The Customizer enables you and your customers to modify
-                    the primary colors, themes, skins, layout options, and
-                    overall appearance of the template in real time.
-                  </p>
-                  <p class="fs-6 text-muted">
-                    While we recommend using this for enhanced customization,
-                    its use is entirely optional. Please review both scenarios
-                    carefully to understand its usage and benefits.
-                  </p>
-
-                  <div class="border-2 border-start border-primary bg-light rounded p-3">
-                    <span class="fw-semibold">Note : </span>
-
-                    <p class="fs-6 mt-2">You must have below files in your project :</p>
-                    <p class="fs-6 mt-2 mb-0">1. config.ts <span class="fw-medium d-block">Path:
-                        main/src/app/config.ts</span></p>
-                    <p class="fs-6 mt-2">2. core.service.ts <span class="fw-medium d-block">Path:
-                        main/src/app/services/core.service.ts</span></p>
-                    <p class="fs-6 mt-2">3. customizer.component.html <span class="fw-medium d-block">Path:
-                        main/src/app/layouts/full/shared/customizer/customizer.component.html</span></p>
-                    <p class="fs-6 mt-2">4. customizer.component.ts <span class="fw-medium d-block">Path:
-                        main/src/app/layouts/full/shared/customizer/customizer.component.ts</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">1. Default settings</h4>
+              <h4 class="card-title mb-4">Authguard</h4>
+              <h5 class="font-weight-normal text-muted lh-base">Auth guard provide lifecycle event called canActivate.
+                The canActivate is like a constructor. It will be called before accessing the routes. The canActivate
+                has to return true to access the page. If it returns false, we can not access the page. We can write our
+                user authorization and authentication logic inside the canActivate function.</h5>
               <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
+                      <code>
+// -----------------------------------------------------------------------------------------
+// File : src/app/login.service.ts
+// -----------------------------------------------------------------------------------------
 
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light',
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
- 
-                            </code>
-                        </pre>
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class LoginService {
+  constructor() {}
+
+  checkusernameandpassword(uname: string, pwd: string) {
+    if (uname === 'admin' && pwd === 'admin123') {
+      localStorage.setItem('username', 'admin');
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
+
+
+// -----------------------------------------------------------------------------------------
+// File : src/app/auth.guard.ts
+// -----------------------------------------------------------------------------------------
+import { Injectable } from '@angular/core';
+import {
+  CanActivate,
+  ActivatedRouteSnapshot,
+  RouterStateSnapshot,
+  Router,
+} from '@angular/router';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class AuthGuard implements CanActivate {
+  constructor(private routes: Router) {}
+
+  canActivate(
+    next: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): boolean {
+    if (localStorage.getItem('username') != null) {
+      return true;
+    } else {
+      this.routes.navigate(['/authentication/side-login']);
+      return false;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------------------
+// File : src/app/app-routing.module.ts
+// -----------------------------------------------------------------------------------------
+import { AuthGuard } from './auth.guard';
+const routes: Routes = [
+  {
+    path: '',
+    component: FullComponent,
+    canActivate: [AuthGuard],
+    children: [
+      {
+        path: '',
+        redirectTo: '/starter',
+        pathMatch: 'full',
+      },
+      {
+        path: 'starter',
+        loadChildren: () =>
+          import('./pages/pages.module').then((m) => m.PagesModule),
+      },
+    ],
+  },
+];
+
+                      </code>
+                    </pre>
             </div>
           </div>
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">
-                2. How to set right-to-left (RTL) settings ?
-              </h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'rtl', // change is here
-  theme: 'light',
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-
-                            </code>
-                        </pre>
-            </div>
-          </div>
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">3. How to set Dark theme ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'dark', // change is here
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">4. How to change color theme ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light',
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  // blue_theme, orange_theme, purple_theme, aqua_theme, cyan_theme, green_theme
-  activeTheme: 'purple_theme', // change is here
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">5. How to set Minisidebar ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light', 
-  sidenavOpened: true,
-  sidenavCollapsed: true, // change is here
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">6. How to set Horizontal Layout ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light', 
-  sidenavOpened: true,
-  sidenavCollapsed: true, // change is here
-  boxed: true,
-  horizontal: true, // change is here
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">7. How to set card Border ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light', 
-  sidenavOpened: true,
-  sidenavCollapsed: true, // change is here
-  boxed: true,
-  horizontal: false,
-  cardBorder: true, // change is here
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
           <!-- ============================================================== -->
-          <!-- End Of Page Content -->
+          <!-- End Page wrapper  -->
           <!-- ============================================================== -->
         </div>
+        <!-- ============================================================== -->
+        <!-- End Of Page Content -->
+        <!-- ============================================================== -->
+
       </div>
-      <!-- ============================================================== -->
-      <!-- End Container fluid  -->
-      <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
-    <!-- End Page wrapper  -->
+    <!-- End Container fluid  -->
     <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <!-- <footer class="footer bg-white text-center">
+          All Rights Reserved by Flexy. Designed and Developed by
+          <a href="https://www.Adminmart.com">Adminmart.com</a>
+        </footer> -->
+
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Page wrapper  -->
+  <!-- ============================================================== -->
   </div>
   <!-- ============================================================== -->
   <!-- End Wrapper -->
@@ -663,6 +540,10 @@ export const defaults: AppSettings = {
   <script src="../../styles/assets/highlights/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
+
+    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: "#navbar-example3",
+    });
   </script>
   <!-- End JS -->
 </body>

@@ -30,6 +30,7 @@
 </head>
 
 <body>
+
   <div class="d-lg-flex align-items-center px-4 py-3 bg-dark premium-header">
     <h4 class="text-white mb-0">Flexy Pro Version is Available!</h4>
     <div class="ms-auto mt-4 mt-md-0">
@@ -137,7 +138,7 @@
             <a href="index.html">
               <b class="logo-icon">
                 <!-- Dark Logo icon -->
-                <img src="../../styles/dist/images/flexy/logo-dark.svg" alt="homepage" class="dark-logo" />
+                <img src="../../styles/dist/images/materialM/logo-dark.svg" alt="homepage" class="dark-logo" />
               </b>
               <!--End Logo icon -->
             </a>
@@ -227,8 +228,6 @@
                     Authentication
                     <span class="badge bg-secondary f-s-12">PRO</span></a>
                 </li>
-                <!--Support-->
-
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
                       class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
@@ -258,7 +257,7 @@
               <a href="index.html">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
-                  <img src="../../styles/dist/images/flexy/logo-dark.svg" alt="homepage" class="dark-logo" />
+                  <img src="../../styles/dist/images/materialM/logo-dark.svg" alt="homepage" class="dark-logo" />
                 </b>
                 <!--End Logo icon -->
               </a>
@@ -349,7 +348,7 @@
                       Authentication
                       <span class="badge bg-secondary f-s-12">PRO</span></a>
                   </li>
-                  <!--Support-->
+
                   <li class="sidebar-item">
                     <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
                         class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
@@ -386,11 +385,16 @@
           <a href="index.html">
             <b class="logo-icon d-lg-none d-block">
               <!-- Dark Logo icon -->
-              <img src="../../styles/dist/images/flexy/logo-dark.svg" alt="homepage" class="dark-logo" />
+              <img src="../../styles/dist/images/materialM/logo-dark.svg" alt="homepage" class="dark-logo" />
             </b>
             <!--End Logo icon -->
           </a>
           <div class="d-flex align-items-center">
+            <!-- <a
+                class="nav-toggler waves-effect waves-light pe-6 text-dark ms-3 d-lg-none d-block"
+                href="javascript:void(0)"
+                ><i class="ti ti-menu-2"></i
+              ></a> -->
             <!---Mobile view canvas button--->
             <a class="pe-6 text-muted ms-3 d-lg-none d-block" data-bs-toggle="offcanvas" href="#offcanvasExample"
               role="button" aria-controls="offcanvasExample">
@@ -407,231 +411,179 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
-          <h4 class="mb-4 pb-2">Theme Settings</h4>
+          <h4 class="mb-4 pb-2">Color</h4>
 
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">Customizer Usage</h4>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#home" role="tab">
+                <span>Free Version</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" href="#profile" role="tab">
+                <span>Premium Version</span>
+              </a>
+            </li>
+          </ul>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane " id="profile" role="tabpanel">
+              <div class="p-3 border border-top-0 rounded-bottom">
+                <div class="p-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Override Colors (Light / Dark Theme)</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        For any change in colors :
+                        <span class="text-dark font-medium">src/assets/scss/themecolors/_orange_theme.scss</span>
+                      </h5>
+                      <pre>
+                            <code class="language-js py-0">
+@use "sass:map";
+@use "@angular/material" as mat;
 
-              <div class="row mt-4">
-                <div class="col-md-4">
-                  <img alt="customizer" class="border rounded img-fluid"
-                    src="../../styles/dist/images/flexy/app-customizer.jpg" />
-                </div>
-                <div class="col-md-8">
-                  <p class="fs-6 text-muted">
-                    The Customizer enables you and your customers to modify
-                    the primary colors, themes, skins, layout options, and
-                    overall appearance of the template in real time.
-                  </p>
-                  <p class="fs-6 text-muted">
-                    While we recommend using this for enhanced customization,
-                    its use is entirely optional. Please review both scenarios
-                    carefully to understand its usage and benefits.
-                  </p>
-
-                  <div class="border-2 border-start border-primary bg-light rounded p-3">
-                    <span class="fw-semibold">Note : </span>
-
-                    <p class="fs-6 mt-2">You must have below files in your project :</p>
-                    <p class="fs-6 mt-2 mb-0">1. config.ts <span class="fw-medium d-block">Path:
-                        main/src/app/config.ts</span></p>
-                    <p class="fs-6 mt-2">2. core.service.ts <span class="fw-medium d-block">Path:
-                        main/src/app/services/core.service.ts</span></p>
-                    <p class="fs-6 mt-2">3. customizer.component.html <span class="fw-medium d-block">Path:
-                        main/src/app/layouts/full/shared/customizer/customizer.component.html</span></p>
-                    <p class="fs-6 mt-2">4. customizer.component.ts <span class="fw-medium d-block">Path:
-                        main/src/app/layouts/full/shared/customizer/customizer.component.ts</span></p>
+html.blue_theme {
+  --mat-sys-primary: rgb(251, 151, 120);
+  --mat-sys-primary-fixed-dim: rgb(251, 151, 120, 0.15);
+  --mat-sys-secondary: rgb(3, 201, 215);
+  --mat-sys-secondary-fixed-dim: rgb(3, 201, 215, 0.15);
+  --mat-sys-error-fixed-dim: rgba(252, 75, 108, 0.15);
+}                        
+                                    </code>
+                                </pre>
+                    </div>
                   </div>
+
+
+                  <div class="mt-4 card">
+                    <div class="card-body">
+                      <h4 class="card-title">Light Theme Variables Settings</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        For any change in colors :
+                        <span
+                          class="text-dark font-medium">src/assets/scss/theme-variables/_light-theme-variables.scss</span>
+                      </h5>
+                      <pre>
+                            <code class="language-js py-0">
+html.light-theme {
+  color-scheme: light;
+    --mat-sys-corner-small: 7px;
+    --mat-sys-corner-medium: 20px;
+    --mat-sys-background: #fafafa;
+    --mat-sys-surface-bright: #f2f6fa;
+    --mat-sys-surface: #fff;
+    --mat-sys-surface-container: #fff;
+    --mat-sys-surface-container-low: #fff;
+    --mat-sys-on-background: #2a3547;
+    --mat-sys-outline: #d7dde2;
+    --mat-sys-outline-variant: #d7dde2;
+    --mdc-outlined-text-field-hover-outline-color: #d7dde2;
+    --mdc-checkbox-unselected-hover-state-layer-color: #d7dde2;
+    --mat-menu-item-hover-state-layer-color: #f6f9fc;
+    --mat-standard-button-toggle-state-layer-color: #f6f9fc;
+    --mat-option-focus-state-layer-color: #f6f9fc;
+    --mat-option-hover-state-layer-color: #f6f9fc;
+    --mdc-switch-unselected-track-color: #f6f9fc;
+    --mat-stepper-header-focus-state-layer-color: #f6f9fc;
+    --mat-stepper-header-hover-state-layer-color: #f6f9fc;
+    --mdc-dialog-supporting-text-color: var(--mat-sys-on-background);
+    --mat-expansion-header-hover-state-layer-color: #f6f9fc;
+}
+                              
+                                    </code>
+                                </pre>
+                    </div>
+                  </div>
+
+
+                  <div class="mt-4 card">
+                    <div class="card-body">
+                      <h4 class="card-title">Dark Theme Variables Settings</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        For any change in colors :
+                        <span
+                          class="text-dark font-medium">src/assets/scss/theme-variables/_dark-theme-variables.scss</span>
+                      </h5>
+                      <pre>
+                            <code class="language-js py-0">
+html.dark-theme {
+  color-scheme: dark;
+  --mat-sys-corner-small: 7px;
+  --mat-sys-corner-medium: 20px;
+  --mat-sys-background: #141a21;
+  --mat-sys-on-background: rgba(255, 255, 255, 0.9);
+  --mat-sys-on-primary: #fff;
+  --mat-sys-surface-bright: #ffffff05;
+  --mat-sys-surface: #141a21;
+  --mat-sys-surface-container: #141a21;
+  --mat-sys-surface-container-low: #141a21;
+  --mat-sys-outline-variant: #2e3f50;
+  --mat-sys-outline: #2e3f50;
+  --mdc-outlined-text-field-hover-outline-color: #465670;
+  --mdc-checkbox-unselected-hover-state-layer-color: #19212a;
+  --mat-menu-item-hover-state-layer-color: #ffffff14;
+  --mat-standard-button-toggle-state-layer-color: #19212a;
+  --mat-option-focus-state-layer-color: #19212a;
+  --mat-option-hover-state-layer-color: #19212a;
+  --mdc-switch-unselected-track-color: #19212a;
+  --mat-stepper-header-focus-state-layer-color: #19212a;
+  --mat-stepper-header-hover-state-layer-color: #19212a;
+  --mat-expansion-header-hover-state-layer-color: #19212a;
+@include mat.card-overrides(
+  (
+    elevated-container-color: #141a21,
+    elevated-container-elevation: "#919eab4d 0 0 2px,#919eab05 0 12px 24px -4px",
+    subtitle-text-color: rgba(255, 255, 255, 0.67),
+  )
+);
+@include mat.theme-overrides(
+  (
+    level1: "#919eab4d 0 0 2px,#919eab05 0 12px 24px -4px",
+    level2: "#919eab4d 0 0 2px,#919eab05 0 12px 24px -4px",
+    level3: "#919eab4d 0 0 2px,#919eab05 0 12px 24px -4px",
+  )
+);
+}                     
+                                    </code>
+                                </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane active" id="home" role="tabpanel">
+              <div class="p-3 border border-top-0 rounded-bottom">
+                <div class="p-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Override Colors (Light / Dark Theme)</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        For any change in colors :
+                        <span class="text-dark font-medium">src/assets/scss/themecolors/_orange_theme.scss</span>
+                      </h5>
+                      <pre>
+                            <code class="language-js py-0">
+@use "sass:map";
+@use "@angular/material" as mat;
+
+html.blue_theme {
+  --mat-sys-primary: rgb(251, 151, 120);
+  --mat-sys-primary-fixed-dim: rgb(251, 151, 120, 0.15);
+  --mat-sys-secondary: rgb(3, 201, 215);
+  --mat-sys-secondary-fixed-dim: rgb(3, 201, 215, 0.15);
+  --mat-sys-error-fixed-dim: rgba(252, 75, 108, 0.15);
+}                        
+                                    </code>
+                                </pre>
+                    </div>
+                  </div>
+
+
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">1. Default settings</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light',
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
- 
-                            </code>
-                        </pre>
-            </div>
-          </div>
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">
-                2. How to set right-to-left (RTL) settings ?
-              </h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'rtl', // change is here
-  theme: 'light',
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-
-                            </code>
-                        </pre>
-            </div>
-          </div>
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">3. How to set Dark theme ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'dark', // change is here
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">4. How to change color theme ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light',
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  // blue_theme, orange_theme, purple_theme, aqua_theme, cyan_theme, green_theme
-  activeTheme: 'purple_theme', // change is here
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">5. How to set Minisidebar ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light', 
-  sidenavOpened: true,
-  sidenavCollapsed: true, // change is here
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">6. How to set Horizontal Layout ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light', 
-  sidenavOpened: true,
-  sidenavCollapsed: true, // change is here
-  boxed: true,
-  horizontal: true, // change is here
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">7. How to set card Border ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light', 
-  sidenavOpened: true,
-  sidenavCollapsed: true, // change is here
-  boxed: true,
-  horizontal: false,
-  cardBorder: true, // change is here
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
-            </div>
-          </div>
 
           <!-- ============================================================== -->
           <!-- End Of Page Content -->
@@ -640,6 +592,17 @@ export const defaults: AppSettings = {
       </div>
       <!-- ============================================================== -->
       <!-- End Container fluid  -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- footer -->
+      <!-- ============================================================== -->
+      <!-- <footer class="footer bg-white text-center">
+          All Rights Reserved by Flexy. Designed and Developed by
+          <a href="https://www.Adminmart.com">Adminmart.com</a>
+        </footer> -->
+
+      <!-- ============================================================== -->
+      <!-- End footer -->
       <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
@@ -663,6 +626,10 @@ export const defaults: AppSettings = {
   <script src="../../styles/assets/highlights/highlight.min.js"></script>
   <script>
     hljs.initHighlightingOnLoad();
+
+    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+      target: "#navbar-example3",
+    });
   </script>
   <!-- End JS -->
 </body>

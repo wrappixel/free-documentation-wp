@@ -27,9 +27,11 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
+
   <div class="d-lg-flex align-items-center px-4 py-3 bg-dark premium-header">
     <h4 class="text-white mb-0">Flexy Pro Version is Available!</h4>
     <div class="ms-auto mt-4 mt-md-0">
@@ -137,7 +139,7 @@
             <a href="index.html">
               <b class="logo-icon">
                 <!-- Dark Logo icon -->
-                <img src="../../styles/dist/images/flexy/logo-dark.svg" alt="homepage" class="dark-logo" />
+                <img src="../../styles/dist/images/materialM/logo-dark.svg" alt="homepage" class="dark-logo" />
               </b>
               <!--End Logo icon -->
             </a>
@@ -227,8 +229,6 @@
                     Authentication
                     <span class="badge bg-secondary f-s-12">PRO</span></a>
                 </li>
-                <!--Support-->
-
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
                       class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
@@ -258,7 +258,7 @@
               <a href="index.html">
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
-                  <img src="../../styles/dist/images/flexy/logo-dark.svg" alt="homepage" class="dark-logo" />
+                  <img src="../../styles/dist/images/materialM/logo-dark.svg" alt="homepage" class="dark-logo" />
                 </b>
                 <!--End Logo icon -->
               </a>
@@ -349,7 +349,7 @@
                       Authentication
                       <span class="badge bg-secondary f-s-12">PRO</span></a>
                   </li>
-                  <!--Support-->
+
                   <li class="sidebar-item">
                     <a class="nav-link sidebar-link d-flex align-items-center" href="docs-change-log.html"><i
                         class="ti ti-refresh-dot me-3 fs-4"></i>Changelog<span
@@ -386,7 +386,7 @@
           <a href="index.html">
             <b class="logo-icon d-lg-none d-block">
               <!-- Dark Logo icon -->
-              <img src="../../styles/dist/images/flexy/logo-dark.svg" alt="homepage" class="dark-logo" />
+              <img src="../../styles/dist/images/materialM/logo-dark.svg" alt="homepage" class="dark-logo" />
             </b>
             <!--End Logo icon -->
           </a>
@@ -407,240 +407,72 @@
           <!-- ============================================================== -->
           <!-- Start Page Content -->
           <!-- ============================================================== -->
-          <h4 class="mb-4 pb-2">Theme Settings</h4>
-
+          <h4 class="mb-4 pb-2">Change Log</h4>
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">Customizer Usage</h4>
-
-              <div class="row mt-4">
-                <div class="col-md-4">
-                  <img alt="customizer" class="border rounded img-fluid"
-                    src="../../styles/dist/images/flexy/app-customizer.jpg" />
-                </div>
-                <div class="col-md-8">
-                  <p class="fs-6 text-muted">
-                    The Customizer enables you and your customers to modify
-                    the primary colors, themes, skins, layout options, and
-                    overall appearance of the template in real time.
-                  </p>
-                  <p class="fs-6 text-muted">
-                    While we recommend using this for enhanced customization,
-                    its use is entirely optional. Please review both scenarios
-                    carefully to understand its usage and benefits.
-                  </p>
-
-                  <div class="border-2 border-start border-primary bg-light rounded p-3">
-                    <span class="fw-semibold">Note : </span>
-
-                    <p class="fs-6 mt-2">You must have below files in your project :</p>
-                    <p class="fs-6 mt-2 mb-0">1. config.ts <span class="fw-medium d-block">Path:
-                        main/src/app/config.ts</span></p>
-                    <p class="fs-6 mt-2">2. core.service.ts <span class="fw-medium d-block">Path:
-                        main/src/app/services/core.service.ts</span></p>
-                    <p class="fs-6 mt-2">3. customizer.component.html <span class="fw-medium d-block">Path:
-                        main/src/app/layouts/full/shared/customizer/customizer.component.html</span></p>
-                    <p class="fs-6 mt-2">4. customizer.component.ts <span class="fw-medium d-block">Path:
-                        main/src/app/layouts/full/shared/customizer/customizer.component.ts</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4 card">
-            <div class="card-body">
-              <h4 class="card-title">1. Default settings</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light',
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
- 
-                            </code>
-                        </pre>
+              <h3 class="card-title">1. V5.0.0 <span class="text-muted fs-5 d-block">(3rd Dec 2024)</span></h4>
+                <h5 class="text-muted border-top pt-3">Updated SCSS based on new Material M3</h5>
+                <h5 class="text-muted">Updated to Material Angular 19.0.4</h5>
+                <h5 class="text-muted">Added Code view for Ui components, Forms Pages, Tables and Charts</h5>
+                <h5 class="text-muted">Updated to Angular 19</h5>
+                <h5 class="text-muted">Added Toastr Page</h5>
             </div>
           </div>
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">
-                2. How to set right-to-left (RTL) settings ?
-              </h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'rtl', // change is here
-  theme: 'light',
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-
-                            </code>
-                        </pre>
+              <h3 class="card-title">2. V4.1.0 <span class="text-muted fs-5 d-block">(3rd Dec 2024)</span></h4>
+                <h5 class="text-muted border-top pt-3">Added one more variation of Contact App</h5>
+                <h5 class="text-muted">Update all the Apps with using Signals</h5>
+                <h5 class="text-muted">Updated customizer that uses signals</h5>
+                <h5 class="text-muted">Added Kanban App in place of Taskboard App</h5>
+                <h5 class="text-muted">Created a service to be used across all apps</h5>
             </div>
           </div>
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">3. How to set Dark theme ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'dark', // change is here
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
+              <h3 class="card-title">3. V4.0.0 <span class="text-muted fs-5 d-block">(5th July 2024)</span></h4>
+                <h5 class="text-muted border-top pt-3">Updated to Angular 18</h5>
+                <h5 class="text-muted">Removed all module files from the package</h5>
+                <h5 class="text-muted">Updated Material Angular 18.0.3</h5>
             </div>
           </div>
-
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">4. How to change color theme ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light',
-  sidenavOpened: true,
-  sidenavCollapsed: false,
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  // blue_theme, orange_theme, purple_theme, aqua_theme, cyan_theme, green_theme
-  activeTheme: 'purple_theme', // change is here
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
+              <h3 class="card-title">4. V3.0.0 <span class="text-muted fs-5 d-block">(19th Feb 2024)</span></h4>
+                <h5 class="text-muted border-top pt-3">Updated to Angular 17</h5>
+                <h5 class="text-muted">Updated to Material Angular components</h5>
             </div>
           </div>
-
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">5. How to set Minisidebar ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light', 
-  sidenavOpened: true,
-  sidenavCollapsed: true, // change is here
-  boxed: true,
-  horizontal: false,
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
+              <h3 class="card-title">5. V2.0.0 <span class="text-muted fs-5 d-block">(30th May 2023)</span></h4>
+                <h5 class="text-muted border-top pt-3">Updated to Angular 16</h5>
+                <h5 class="text-muted">Added many other pages</h5>
+                <h5 class="text-muted">Updated material angular version components</h5>
             </div>
           </div>
-
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">6. How to set Horizontal Layout ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light', 
-  sidenavOpened: true,
-  sidenavCollapsed: true, // change is here
-  boxed: true,
-  horizontal: true, // change is here
-  cardBorder: false,
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
+              <h3 class="card-title">6. V1.2.0 <span class="text-muted fs-5 d-block">(22nd jun 2022)</span></h4>
+                <h5 class="text-muted border-top pt-3">Updated to Angular 14</h5>
             </div>
           </div>
-
           <div class="mt-4 card">
             <div class="card-body">
-              <h4 class="card-title">7. How to set card Border ?</h4>
-              <pre>
-                            <code class="language-js py-0">
-// ----------------------------------------------------
-// File: src/app/config.ts
-// ----------------------------------------------------
-
-export const defaults: AppSettings = {
-  dir: 'ltr',
-  theme: 'light', 
-  sidenavOpened: true,
-  sidenavCollapsed: true, // change is here
-  boxed: true,
-  horizontal: false,
-  cardBorder: true, // change is here
-  activeTheme: 'blue_theme',
-  language: 'en-us',
-  navPos: 'side',
-};
-                            </code>
-                        </pre>
+              <h3 class="card-title">7. V1.0.0 <span class="text-muted fs-5 d-block">(14th March 2022)</span></h4>
+                <h5 class="text-muted border-top pt-3">Initial release.</h5>
             </div>
           </div>
-
           <!-- ============================================================== -->
           <!-- End Of Page Content -->
           <!-- ============================================================== -->
+
         </div>
       </div>
       <!-- ============================================================== -->
       <!-- End Container fluid  -->
       <!-- ============================================================== -->
+
     </div>
     <!-- ============================================================== -->
     <!-- End Page wrapper  -->

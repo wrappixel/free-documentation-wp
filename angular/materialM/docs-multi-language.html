@@ -45,6 +45,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
   </head>
 
   <body>
@@ -211,7 +212,7 @@
                 <b class="logo-icon">
                   <!-- Dark Logo icon -->
                   <img
-                    src="../../styles/dist/images/flexy/logo-dark.svg"
+                    src="../../styles/dist/images/materialM/logo-dark.svg"
                     alt="homepage"
                     class="dark-logo"
                   />
@@ -381,7 +382,7 @@
                   <b class="logo-icon">
                     <!-- Dark Logo icon -->
                     <img
-                      src="../../styles/dist/images/flexy/logo-dark.svg"
+                      src="../../styles/dist/images/materialM/logo-dark.svg"
                       alt="homepage"
                       class="dark-logo"
                     />
@@ -559,7 +560,7 @@
               <b class="logo-icon d-lg-none d-block">
                 <!-- Dark Logo icon -->
                 <img
-                  src="../../styles/dist/images/flexy/logo-dark.svg"
+                  src="../../styles/dist/images/materialM/logo-dark.svg"
                   alt="homepage"
                   class="dark-logo"
                 />
@@ -588,258 +589,152 @@
             <!-- ============================================================== -->
             <!-- Start Page Content -->
             <!-- ============================================================== -->
-            <h4 class="mb-4 pb-2">Quick Start</h4>
+            <h4 class="mb-4 pb-2">Multi Language</h3>
+            <div class="mt-4 card">
+                <div class="card-body">
+                    <h4 class="card-title">1. Add content</h4>
+                    <pre>
+                        <code class="language-js py-0 ">
+// ----------------------------------------------------
+// File: src/assets/i18n/de.json  
+// ----------------------------------------------------  
 
-            <ul class="nav nav-tabs" role="tablist">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  data-bs-toggle="tab"
-                  href="#home"
-                  role="tab"
-                >
-                  <span>Free Version</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  data-bs-toggle="tab"
-                  href="#profile"
-                  role="tab"
-                >
-                  <span>Premium Version</span>
-                </a>
-              </li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div class="tab-pane " id="profile" role="tabpanel">
-                <div class="p-3 border border-top-0 rounded-bottom">
-                  <div class="mt-4 card">
-                    <div class="card-body">
-                      <h4 class="card-title">1. Requirements</h4>
-                      <h5 class="card-subtitle mt-2 text-muted">
-                        Before proceeding, you need to have the latest stable
-                        <a href="https://nodejs.org/">node.js</a>
-                      </h5>
-                      <h5 class="mt-4 font-medium">Recommended environment:</h5>
-                      <ul class="text-muted">
-                        <li class="font-16">node js 20+</li>
-                        <li class="font-16">npm js 10+</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="mt-4 card">
-                    <div class="card-body">
-                      <h4 class="card-title">2. Install</h4>
-                      <h5 class="card-subtitle mt-2 text-muted">
-                        Open package folder and install its dependencies. We
-                        recommanded yarn or npm.
-                      </h5>
-                      <h5 class="mt-4 font-medium">1) Install with npm:</h5>
-                      <pre>
-                                  <code class="language-sh py-0">
-cd project-folder
-npm install
-                                  </code>
-                              </pre>
-                      <h5 class="mt-3 font-medium">2) Install with yarn:</h5>
-      
-                      <pre>
-                                  <code class="language-sh py-0">
-cd project-folder
-yarn install
-                                  </code>
-                              </pre>
-                    </div>
-                  </div>
-                  <div class="mt-4 card">
-                    <div class="card-body">
-                      <h4 class="card-title">3. Start</h4>
-                      <h5 class="card-subtitle mt-2 text-muted">
-                        Once npm install is done now you an run the app.
-                      </h5>
-                      <pre>
-                                  <code class="language-sh py-0">
-ng serve -o
-                                  </code>
-                              </pre>
-                      <h5 class="card-subtitle text-muted mt-4">
-                        This command will start a local webserver
-                        <span class="text-dark font-medium"
-                          >http://localhost:4200</span
-                        >:
-                      </h5>
-                      <pre>
-                                  <code class="language-sh py-0">
-Initial chunk files               | Names                 |  Raw size
-main.js                           | main                  | 124.52 kB |
-styles.css                        | styles                | 122.48 kB |
-polyfills.js                      | polyfills             |  90.20 kB |
-chunk-EPFQZFJ3.js                 | -                     |  42.79 kB |
-chunk-6XS54CRB.js                 | -                     |   3.63 kB |
-chunk-KIZ4YIJC.js                 | -                     |   1.66 kB |
-chunk-X7GAXGAG.js                 | -                     |   1.27 kB |
-chunk-VUJOFXKG.js                 | -                     | 938 bytes |
+{
+  "Analytical": "Analytisch",
+  "eCommerce": "E-Commerce",
+  "Chat": "Plaudern",
+}
 
-                                  | Initial total         | 387.49 kB
+</code>
+<code class="language-js py-0 mt-4">
+// ----------------------------------------------------
+// File: src/assets/i18n/en.json  
+// ----------------------------------------------------  
 
-Lazy chunk files                  | Names                 |  Raw size
-apps.routes-SD3OFR2B.js           | apps-routes           | 592.55 kB |
-forms.routes-QIH5MKNQ.js          | forms-routes          | 430.16 kB |
-ui-components.routes-Y3XMG6ZX.js  | ui-components-routes  | 393.37 kB |
-tables.routes-PMZV7Q2F.js         | tables-routes         | 334.43 kB |
-dashboards.routes-WMVQCMES.js     | dashboards-routes     | 127.99 kB |
-widgets.routes-DJPTLUXX.js        | widgets-routes        |  88.94 kB |
-charts.routes-RK4JT57K.js         | charts-routes         |  87.31 kB |
-authentication.routes-BXFBLFCT.js | authentication-routes |  68.45 kB |
-theme-pages.routes-KHABTJK4.js    | theme-pages-routes    |  61.99 kB |
-landingpage.routes-7HHGGPB2.js    | landingpage-routes    |  41.99 kB |
-datatable.routes-W5U4B4LQ.js      | datatable-routes      |  35.49 kB |
-pages.routes-TU5ZQLBT.js          | pages-routes          |   2.98 kB |
-chunk-MBJBNJ2F.js                 | -                     |   2.76 kB |
+{
+  "Analytical": "Analytical",
+  "eCommerce": "eCommerce",
+  "Chat": "Chat",
+}
 
-Application bundle generation complete. [33.662 seconds]
-➜  Local:   http://localhost:4200/
-➜  press h + enter to show help
-                                  </code>
-                              </pre>
-                    </div>
-                  </div>
-      
-                  <div class="mt-4 card">
-                    <div class="card-body">
-                      <h4 class="card-title">4. Build / Deployment</h4>
-                      <h5 class="card-subtitle mt-2 text-muted">
-                        After adding url run below command for build a app.
-                      </h5>
-                      <pre>
-                                  <code class="language-sh py-0">
-ng build
-                                  </code>
-                              </pre>
-                      <h5 class="card-subtitle mt-4">
-                        Finally, Your app is ready to be deployed.🥳
-                      </h5>
-                    </div>
-                  </div>
+</code>
+<code class="language-js py-0 mt-4">
+// ----------------------------------------------------
+// File: src/assets/i18n/es.json  
+// ----------------------------------------------------  
+
+{
+  "Analytical": "Analítica",
+  "eCommerce": "comércio eletrônico",
+  "Chat": "Bater papo",
+}
+
+</code>
+<code class="language-js py-0 mt-4">
+// ----------------------------------------------------
+// File: src/assets/i18n/fr.json  
+// ---------------------------------------------------- 
+
+{
+  "Analytical": "Analytique",
+  "eCommerce": "commerce électronique",
+  "Chat": "Discuter",
+}
+
+                        </code>
+                    </pre>
                 </div>
-              </div>
-              <div class="tab-pane active" id="home" role="tabpanel">
-                <div class="p-3 border border-top-0 rounded-bottom">
-                  <div class="mt-4 card">
-                    <div class="card-body">
-                      <h4 class="card-title">1. Requirements</h4>
-                      <h5 class="card-subtitle mt-2 text-muted">
-                        Before proceeding, you need to have the latest stable
-                        <a href="https://nodejs.org/">node.js</a>
-                      </h5>
-                      <h5 class="mt-4 font-medium">Recommended environment:</h5>
-                      <ul class="text-muted">
-                        <li class="font-16">node js 20+</li>
-                        <li class="font-16">npm js 10+</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="mt-4 card">
-                    <div class="card-body">
-                      <h4 class="card-title">2. Install</h4>
-                      <h5 class="card-subtitle mt-2 text-muted">
-                        Open package folder and install its dependencies. We
-                        recommanded yarn or npm.
-                      </h5>
-                      <h5 class="mt-4 font-medium">1) Install with npm:</h5>
-                      <pre>
-                                  <code class="language-sh py-0">
-cd main
-npm install
-                                  </code>
-                              </pre>
-                      <h5 class="mt-3 font-medium">2) Install with yarn:</h5>
-      
-                      <pre>
-                                  <code class="language-sh py-0">
-cd main
-yarn install
-                                  </code>
-                              </pre>
-                    </div>
-                  </div>
-                  <div class="mt-4 card">
-                    <div class="card-body">
-                      <h4 class="card-title">3. Start</h4>
-                      <h5 class="card-subtitle mt-2 text-muted">
-                        Once npm install is done now you an run the app.
-                      </h5>
-                      <pre>
-                                  <code class="language-sh py-0">
-ng serve -o
-                                  </code>
-                              </pre>
-                      <h5 class="card-subtitle text-muted mt-4">
-                        This command will start a local webserver
-                        <span class="text-dark font-medium"
-                          >http://localhost:4200</span
-                        >:
-                      </h5>
-                      <pre>
-                                  <code class="language-sh py-0">
-Initial chunk files                                      | Names                                      |  Raw size
-vendor.js                                                | vendor                                     |  10.07 MB |
-polyfills.js                                             | polyfills                                  | 240.46 kB |
-styles.css, styles.js                                    | styles                                     | 212.74 kB |
-main.js                                                  | main                                       | 104.78 kB |
-runtime.js                                               | runtime                                    |  52.28 kB |
+            </div> 
+            <div class="mt-4 card">
+                <div class="card-body">
+                    <h4 class="card-title">2. Usage</h4>
+                    <pre class="mt-4">
+<code class="language-js py-0">
+// ----------------------------------------------------
+// File: src/app/layouts/full/vertical/header/header.component.ts
+// ---------------------------------------------------- 
 
-                                                          | Initial total                              |  10.68 MB
+public selectedLanguage: any = {
+  language: 'English',
+  code: 'en',
+  type: 'US',
+  icon: '/assets/images/flag/icon-flag-en.svg',
+};
 
-Lazy chunk files                                         | Names                                      |  Raw size
-src_app_pages_pages_routes_ts.js                         | pages-pages-routes                         | 866.61 kB |
-src_app_pages_ui-components_ui-components_routes_ts.js   | pages-ui-components-ui-components-routes   | 325.00 kB |
-node_modules_angular_animations_fesm2022_browser_mjs.js  | angular-animations-browser                 | 182.11 kB |
-src_app_pages_authentication_authentication_routes_ts.js | pages-authentication-authentication-routes |  21.89 kB |
-src_app_pages_extra_extra_routes_ts.js                   | pages-extra-extra-routes                   |   6.45 kB |
+public languages: any[] = [
+  {
+    language: 'English',
+    code: 'en',
+    type: 'US',
+    icon: '/assets/images/flag/icon-flag-en.svg',
+  },
+  {
+    language: 'Español',
+    code: 'es',
+    icon: '/assets/images/flag/icon-flag-es.svg',
+  },
+  {
+    language: 'Français',
+    code: 'fr',
+    icon: '/assets/images/flag/icon-flag-fr.svg',
+  },
+  {
+    language: 'German',
+    code: 'de',
+    icon: '/assets/images/flag/icon-flag-de.svg',
+  },
+];
 
-Build at: 2025-01-30T04:50:40.753Z - Hash: db47944560bd6adf - Time: 99062ms
+constructor(
+    private translate: TranslateService
+  ) {
+    translate.setDefaultLang('en');
+  }
 
-** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
-                                  </code>
-                              </pre>
-                    </div>
-                  </div>
-      
-                  <div class="mt-4 card">
-                    <div class="card-body">
-                      <h4 class="card-title">4. Build / Deployment</h4>
-                      <h5 class="card-subtitle mt-2 text-muted">
-                        After adding url run below command for build a app.
-                      </h5>
-                      <pre>
-                                  <code class="language-sh py-0">
-ng build
-                                  </code>
-                              </pre>
-                      <h5 class="card-subtitle mt-4">
-                        Finally, Your app is ready to be deployed.🥳
-                      </h5>
-                    </div>
-                  </div>
+  changeLanguage(lang: any): void {
+    this.translate.use(lang.code);
+    this.selectedLanguage = lang;
+  }
+
+// ----------------------------------------------------
+// File: src/app/layouts/full/vertical/header/header.component.html
+// ---------------------------------------------------- 
+&lt;button [matMenuTriggerFor]=&quot;flags&quot; mat-icon-button class=&quot;m-r-5&quot;&gt;
+  &lt;img
+    [src]=&quot;selectedLanguage.icon&quot;
+    class=&quot;rounded-circle object-cover icon-20&quot;
+  /&gt;
+&lt;/button&gt;
+&lt;mat-menu #flags=&quot;matMenu&quot; class=&quot;cardWithShadow&quot;&gt;
+  &lt;button
+    mat-menu-item
+    *ngFor=&quot;let lang of languages&quot;
+    (click)=&quot;changeLanguage(lang)&quot;
+  &gt;
+    &lt;div class=&quot;d-flex align-items-center&quot;&gt;
+      &lt;img
+        [src]=&quot;lang.icon&quot;
+        class=&quot;rounded-circle object-cover m-r-8 icon-20&quot;
+      /&gt;
+      &lt;span class=&quot;mat-subtitle-1 f-s-14&quot;&gt;{{ lang.language }}&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/button&gt;
+&lt;/mat-menu&gt;
+</code>
+
+                    </pre>
                 </div>
-              </div>
-            </div>
-
-
-            
-
+            </div> 
             <!-- ============================================================== -->
             <!-- End Of Page Content -->
             <!-- ============================================================== -->
+
           </div>
         </div>
         <!-- ============================================================== -->
         <!-- End Container fluid  -->
         <!-- ============================================================== -->
+
       </div>
       <!-- ============================================================== -->
       <!-- End Page wrapper  -->
