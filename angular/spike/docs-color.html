@@ -554,47 +554,19 @@ html.dark-theme {
                       </h5>
                       <pre>
                             <code class="language-js py-0">
-$mat-primary: (
-  100: white,
-  500: #0085db,
-  700: #0085db,
-  contrast: (
-    100: white,
-    500: white,
-    700: white,
-  ),
-);
-$mat-secondary: (
-  100: white,
-  500: #707a82,
-  700: #707a82,
-  contrast: (
-    100: white,
-    500: white,
-    700: white,
-  ),
-);
+@use "sass:map";
+@use "@angular/material" as mat;
 
-$mat-warn: (
-  100: #FDEDE8,
-  500: #fa896b,
-  700: #f3704d,
-  contrast: (
-    100: white,
-    500: white,
-    700: white,
-  ),
-);
-
-$theme-primary: mat.m2-define-palette($mat-primary, 500);
-$theme-accent: mat.m2-define-palette($mat-secondary, 500);
-$theme-warn: mat.m2-define-palette($mat-warn, 500);
+html.blue_theme {
+  --mat-sys-primary: rgb(0, 133, 219); 
+  --mat-sys-primary-fixed-dim: rgb(0, 133, 219, 0.15);
+  --mat-sys-secondary: rgb(112, 122, 130);
+  --mat-sys-secondary-fixed-dim: rgb(112, 122, 130, 0.15);
+}    
                                     </code>
                                 </pre>
                     </div>
                   </div>
-
-
                 </div>
               </div>
             </div>
