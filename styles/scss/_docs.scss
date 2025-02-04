@@ -14,7 +14,7 @@
 
 @include media-breakpoint-down(lg) {
   .premium-header {
-    top: 60px;
+    top: 61px; 
   }
 } 
 
@@ -25,6 +25,10 @@
     align-items: stretch;
     font-size: 16px;
     margin-top: 73px;
+
+    @include media-breakpoint-down(lg){
+      margin-top: 150px;
+    }
   }
 
   
@@ -175,14 +179,6 @@
     .page-wrapper {
       margin-left: 0;
       padding-top: 0;
-    }
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .docs {
-    .page-wrapper .container-fluid {
-      padding-top: 115px;
     }
   }
 }

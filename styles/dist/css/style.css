@@ -12954,7 +12954,7 @@ textarea.form-control-lg {
 
 @media (max-width: 991.98px) {
   .premium-header {
-    top: 60px;
+    top: 61px;
   }
 }
 .docs#main-wrapper {
@@ -12962,6 +12962,11 @@ textarea.form-control-lg {
   align-items: stretch;
   font-size: 16px;
   margin-top: 73px;
+}
+@media (max-width: 991.98px) {
+  .docs#main-wrapper {
+    margin-top: 150px;
+  }
 }
 .docs .left-sidebar {
   width: 270px;
@@ -13090,10 +13095,5 @@ textarea.form-control-lg {
   .docs .page-wrapper {
     margin-left: 0;
     padding-top: 0;
-  }
-}
-@media (max-width: 575.98px) {
-  .docs .page-wrapper .container-fluid, .docs .page-wrapper .container-sm, .docs .page-wrapper .container-md, .docs .page-wrapper .container-lg, .docs .page-wrapper .container-xl, .docs .page-wrapper .container-xxl {
-    padding-top: 115px;
   }
 }
