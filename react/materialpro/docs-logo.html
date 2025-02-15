@@ -60,20 +60,23 @@
               <i class="ti ti-chevron-down fs-4 ms-1"></i></a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>VueJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376"
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>NextJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>React Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>React Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro/?ref=376"
@@ -81,26 +84,29 @@
               </li>
             </ul>
           </div>
-  
+
           <div class="dropdown">
             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary d-flex align-items-center"><i
                 class="ti ti-shopping-cart me-2 fs-4"></i> Buy Now<i class="ti ti-chevron-down fs-4 ms-1"></i></a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>VueJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376"
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>NextJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>React Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>React Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro/?ref=376"
@@ -510,36 +516,24 @@
                       <h4 class="card-title">Change Logo</h4>
                       <h5 class="card-subtitle mt-2 text-muted mb-4">
                         To change logo :
-                        <span class="text-dark font-medium">src/app/layouts/full/sidebar/branding.component.ts</span>
+                        <span class="text-dark font-medium">package/src/layouts/Logo.js</span>
                       </h5>
                       <div class="border-2 border-start border-primary bg-light rounded p-3">
                         Put the logo image into the assets/images/logos folder.
                       </div>
                       <pre>
                             <code class="language-js py-0">
-import { Component } from '@angular/core';
-import { CoreService } from 'src/app/services/core.service';
+import  { ReactComponent as LogoDark1 } from "../assets/images/logos/materialpro.svg";
+import { Link } from "react-router";
+const Logo = () =&gt; {
+  return (
+    &lt;Link to=&quot;/&quot;&gt;
+      &lt;LogoDark1 /&gt;
+    &lt;/Link&gt;
+  );
+};
 
-@Component({
-selector: 'app-branding',
-imports: [],
-template: `
-  &lt;a href=&quot;/&quot; class=&quot;logodark&quot;&gt;
-    &lt;img
-      src=&quot;./assets/images/logos/dark-logo.svg&quot;
-      class=&quot;align-middle m-2&quot;
-      alt=&quot;logo&quot;
-    /&gt;
-  &lt;/a&gt;
-`,
-})
-export class BrandingComponent {
-options = this.settings.getOptions();
-constructor(private settings: CoreService) {}
-}
-                              
-                              
-                              
+export default Logo;
                                     </code>
                                 </pre>
                     </div>

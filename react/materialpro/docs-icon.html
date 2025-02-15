@@ -62,20 +62,23 @@
               <i class="ti ti-chevron-down fs-4 ms-1"></i></a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>VueJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376"
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>NextJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>React Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>React Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro/?ref=376"
@@ -83,26 +86,29 @@
               </li>
             </ul>
           </div>
-  
+
           <div class="dropdown">
             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary d-flex align-items-center"><i
                 class="ti ti-shopping-cart me-2 fs-4"></i> Buy Now<i class="ti ti-chevron-down fs-4 ms-1"></i></a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>VueJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376"
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>NextJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>React Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>React Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/materialpro/?ref=376"
@@ -406,32 +412,23 @@
           <h4 class="mb-4 pb-2">Icons</h3>
             <div class="mt-4 card">
               <div class="card-body">
-                <h4 class="card-title">1. Tabler Icons</h4>
-                <a href="https://tabler-icons.io/" class="font-16">https://tabler-icons.io/</a>
+                <h4 class="card-title">1. Bootstrap Icons</h4>
+                <a href="https://icons.getbootstrap.com/" class="font-16">https://icons.getbootstrap.com/</a>
                 <pre>
                         <code class="language-js py-0">
 // ----------------------------------------------------------------------
-// app.module.ts
+// package/src/assets/scss/style.scss
 // ----------------------------------------------------------------------
 
 // icons
-import { TablerIconsModule } from 'angular-tabler-icons';
-import * as TablerIcons from 'angular-tabler-icons/icons';
-
-@NgModule({
-  declarations: [],
-  imports: [
-    TablerIconsModule.pick(TablerIcons),
-  ],
-  exports: [TablerIconsModule],
-})
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 // ----------------------------------------------------------------------
 // usage
 // ----------------------------------------------------------------------
-&lt;i-tabler name=&quot;home&quot; class=&quot;icon-20&quot;&gt;&lt;/i-tabler&gt;
-&lt;i-tabler name=&quot;points&quot; class=&quot;icon-20&quot;&gt;&lt;/i-tabler&gt;
-&lt;i-tabler name=&quot;grid-dots&quot; class=&quot;icon-20&quot;&gt;&lt;/i-tabler&gt;
+&lt;i class=&quot;bi bi-speedometer2&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-bell&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;bi bi-patch-check&quot;&gt;&lt;/i&gt;
 
                         </code>
                     </pre>
