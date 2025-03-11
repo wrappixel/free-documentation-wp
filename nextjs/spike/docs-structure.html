@@ -432,383 +432,98 @@
             <div class="tab-pane " id="profile" role="tabpanel">
               <div class="p-3 border border-top-0 rounded-bottom">
                 <div class="bg-light p-3 rounded">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4 class="font-weight-medium">
-                        Spike NextJs Dashboard
-                      </h4>
-                      <ul class="ps-3 ps-md-5 list-unstyled">
-                        <li class="py-2">
-                          <span class="font-medium"><i class="ti ti-folder me-2 text-primary font-bold"></i>docs
-                          </span> <span class="fs-9 text-muted ms-4">(Documetation for the Theme)</span>
-                        </li>
-                        <li class="py-2">
-                          <span class="font-medium"><i class="ti ti-folder me-2 text-primary font-bold"></i>figma-file
-                          </span> <span class="fs-9 text-muted ms-4">(Figma of the pages)</span>
-                        </li>
-                        <li class="py-2">
-                          <span class="font-medium"><i class="ti ti-folder me-2 text-primary font-bold"></i>packages
-                          </span>
-                          <ul class="ps-3 ps-md-5 list-unstyled">
+                  <h4 class="font-weight-medium">
+                    Spike NextJs Dashboard
+                  </h4>
+                  <pre class="">
+                    <code class="language-plaintext">
+📦
+│
+├──📁 docs (Documetation for the Theme)
+├──📁 figma-file (Figma of the pages)
+├──📁 packages
+|  ├──📁 dark (Demo)
+|  ├──📁 horizontal (Demo)
+|  ├──📁 main (Demo)
+|  |  ├──📁 public
+|  |  ├──📁 src
+|  |  |  ├──📁 app
+|  |  |  |  ├──📁 (DashboardLayout) (Contains all the pages)
+|  |  |  |  |  ├──📁 apps
+|  |  |  |  |  ├──📁 charts
+|  |  |  |  |  ├──📁 components
+|  |  |  |  |  ├──📁 dashboards
+|  |  |  |  |  ├──📁 forms
+|  |  |  |  |  ├──📁 layout (It has header and sidebar component of Vertical and Horizontal Layout)
+|  |  |  |  |  ├──📁 tables
+|  |  |  |  |  ├──📁 theme-pages
+|  |  |  |  |  ├──📁 types (Define the types for Typescript Demo)
+|  |  |  |  |  ├──📁 ui-components
+|  |  |  |  |  ├──📁 widgets
+|  |  |  |  |  ├──📄 layout.tsx
+|  |  |  |  |  ├──📄 page.tsx
+|  |  |  |  ├──📁 api (All Api Routes)
+|  |  |  |  ├──📁 auth (Auth Pages)
+|  |  |  |  ├──📁 components (All the Components of Dashboards,Ui, Forms etc.)
+|  |  |  |  ├──📁 context
+|  |  |  |  ├──📁 css (Apply style)
+|  |  |  |  ├──📁 landingpage (Landingpage)
+|  |  |  |  ├──📄 app.tsx
+|  |  |  |  ├──📄 layout.tsx
+|  |  |  ├──📁 hooks
+|  |  |  ├──📁 lib
+|  |  |  ├──📁 utils (You can overwrite flowbite-react components and change language from here)
+|  |  ├──📄 components.json
+|  |  ├──📄 next.config.mjs
+|  |  ├──📄 postcss.config.mjs
+|  |  ├──📄 package.json
+|  |  ├──📄 tailwind.config.ts
+|  |  ├──📄 tsconfig.json
+|  ├──📁 minisidebar (Demo)
+|  ├──📁 rtl (Demo)
+|  ├──📁 default (Demo)
+|  ├──📁 starterkit (Demo)
 
-                            <li class="py-2">
-                              <ul class="ps-2 ps-md-3 list-unstyled">
-                                <li class="py-2">
-                                  <span class="font-medium text-muted"><i
-                                      class="ti ti-folder me-2 text-primary font-bold"></i>dark</span> <span
-                                    class="fs-9 text-muted ms-4">(Demo)</span>
-                                </li>
-                                <li class="py-2">
-                                  <span class="font-medium text-muted"><i
-                                      class="ti ti-folder me-2 text-primary font-bold"></i>horizontal</span> <span
-                                    class="fs-9 text-muted ms-4">(Demo)</span>
-                                </li>
-                                <li class="py-2">
-                                  <span class="font-medium text-muted"><i
-                                      class="ti ti-folder me-2 text-primary font-bold"></i>main</span> <span
-                                    class="fs-9 text-muted ms-4">(Demo)</span>
-                                  <ul class="ps-3 ps-md-5 list-unstyled">
-                                    <li class="py-2">
-                                      <span class="font-medium text-muted"><i
-                                          class="ti ti-folder me-2 text-primary font-bold"></i>public</span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="font-medium text-muted"><i
-                                          class="ti ti-folder me-2 text-primary font-bold"></i>src</span>
-                                      <ul class="ps-3 ps-md-5 list-unstyled">
-                                        <li class="py-2">
-                                          <span class="font-medium text-muted"><i
-                                              class="ti ti-folder me-2 text-primary font-bold"></i>app</span>
-                                          <ul class="ps-3 ps-md-5 list-unstyled">
-                                            <li class="py-2">
-                                              <span class="font-medium text-muted"><i
-                                                  class="ti ti-folder me-2 text-primary font-bold"></i>(DashboardLayout)</span>
-                                              <span class="fs-9 text-muted ms-4">(Contains all the pages)</span>
-                                              <ul class="ps-3 ps-md-5 list-unstyled">
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>apps</span>
-                                                </li>
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>charts</span>
-                                                </li>
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>components</span>
-                                                </li>
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>dashboards</span>
-                                                </li>
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>forms</span>
-                                                </li>
-
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>layout</span>
-                                                  <span class="fs-9 text-muted ms-4">(It has header and sidebar
-                                                    component of
-                                                    Vertical and Horizontal Layout)</span>
-                                                </li>
-
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>tables</span>
-                                                </li>
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>theme-pages</span>
-                                                </li>
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>types</span>
-                                                  <span class="fs-9 text-muted ms-4">(Define the types for Typescript
-                                                    Demo)</span>
-                                                </li>
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>ui-components</span>
-                                                </li>
-
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-folder me-2 text-primary font-bold"></i>widgets</span>
-                                                </li>
-
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-file me-2 text-primary font-bold"></i>layout.tsx</span>
-                                                </li>
-                                                <li class="py-2">
-                                                  <span class="font-medium text-muted"><i
-                                                      class="ti ti-file me-2 text-primary font-bold"></i>page.tsx</span>
-                                                </li>
-                                              </ul>
-                                            </li>
-                                            <li class="py-2">
-                                              <span class="font-medium text-muted"><i
-                                                  class="ti ti-folder me-2 text-primary font-bold"></i>api</span> <span
-                                                class="fs-9 text-muted ms-4">(All Api Routes)</span>
-                                            </li>
-                                            <li class="py-2">
-                                              <span class="font-medium text-muted"><i
-                                                  class="ti ti-folder me-2 text-primary font-bold"></i>auth</span> <span
-                                                class="fs-9 text-muted ms-4">(Auth Pages)</span>
-                                            </li>
-                                            <li class="py-2">
-                                              <span class="font-medium text-muted"><i
-                                                  class="ti ti-folder me-2 text-primary font-bold"></i>components</span>
-                                              <span class="fs-9 text-muted ms-4">(All the Components of Dashboards,Ui,
-                                                Forms
-                                                etc.)</span>
-                                            </li>
-                                            <li class="py-2">
-                                              <span class="font-medium text-muted"><i
-                                                  class="ti ti-folder me-2 text-primary font-bold"></i>context</span>
-                                              <span class="fs-9 text-muted ms-4"></span>
-                                            </li>
-                                            <li class="py-2">
-                                              <span class="font-medium text-muted"><i
-                                                  class="ti ti-folder me-2 text-primary font-bold"></i>css</span> <span
-                                                class="fs-9 text-muted ms-4">(Apply style)</span>
-                                            </li>
-                                            <li class="py-2">
-                                              <span class="font-medium text-muted"><i
-                                                  class="ti ti-folder me-2 text-primary font-bold"></i>landingpage</span>
-                                              <span class="fs-9 text-muted ms-4">(Landingpage)</span>
-                                            </li>
-                                            <li class="py-2">
-                                              <span class="font-medium text-muted"><i
-                                                  class="ti ti-file me-2 text-primary font-bold"></i>app.tsx</span>
-                                            </li>
-                                            <li class="py-2">
-                                              <span class="font-medium text-muted"><i
-                                                  class="ti ti-file me-2 text-primary font-bold"></i>layout.tsx</span>
-                                            </li>
-
-                                          </ul>
-                                        </li>
-                                        <li class="py-2">
-                                          <span class="font-medium text-muted"><i
-                                              class="ti ti-folder me-2 text-primary font-bold"></i>hooks</span>
-                                        </li>
-                                        <li class="py-2">
-                                          <span class="font-medium text-muted"><i
-                                              class="ti ti-folder me-2 text-primary font-bold"></i>lib</span>
-                                        </li>
-                                        <li class="py-2">
-                                          <span class="font-medium text-muted"><i
-                                              class="ti ti-folder me-2 text-primary font-bold"></i>utils</span> <span
-                                            class="fs-9 text-muted ms-4">(You can overwrite flowbite-react components
-                                            and
-                                            change language from here)</span>
-                                        </li>
-                                      </ul>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="font-medium text-muted"><i
-                                          class="ti ti-file me-2 text-primary font-bold"></i>components.json</span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="font-medium text-muted"><i
-                                          class="ti ti-file me-2 text-primary font-bold"></i>next.config.mjs</span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="font-medium text-muted"><i
-                                          class="ti ti-file me-2 text-primary font-bold"></i>postcss.config.mjs</span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="font-medium text-muted"><i
-                                          class="ti ti-file me-2 text-primary font-bold"></i>package.json</span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="font-medium text-muted"><i
-                                          class="ti ti-file me-2 text-primary font-bold"></i>tailwind.config.ts</span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="font-medium text-muted"><i
-                                          class="ti ti-file me-2 text-primary font-bold"></i>tsconfig.json</span>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li class="py-2">
-                                  <span class="font-medium text-muted"><i
-                                      class="ti ti-folder me-2 text-primary font-bold"></i>minisidebar</span> <span
-                                    class="fs-9 text-muted ms-4">(Demo)</span>
-                                </li>
-                                <li class="py-2">
-                                  <span class="font-medium text-muted"><i
-                                      class="ti ti-folder me-2 text-primary font-bold"></i>rtl</span> <span
-                                    class="fs-9 text-muted ms-4">(Demo)</span>
-                                </li>
-                                <li class="py-2">
-                                  <span class="font-medium text-muted"><i
-                                      class="ti ti-folder me-2 text-primary font-bold"></i>default</span> <span
-                                    class="fs-9 text-muted ms-4">(Demo)</span>
-                                </li>
-                                <li class="py-2">
-                                  <span class="font-medium text-muted"><i
-                                      class="ti ti-folder me-2 text-primary font-bold"></i>starterkit</span> <span
-                                    class="fs-9 text-muted ms-4">(Demo)</span>
-                                </li>
-                              </ul>
-                            </li>
-
-
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                    </code>
+                  </pre>
                 </div>
               </div>
             </div>
             <div class="tab-pane active" id="home" role="tabpanel">
               <div class="p-3 border border-top-0 rounded-bottom">
                 <div class="bg-light p-3 rounded">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4 class="font-weight-medium">
-                        MatDash NextJs Dashboard
-                      </h4>
-                      <ul class="ps-3 ps-md-5 list-unstyled">
-                        <li class="py-2">
-                          <span class="font-medium">
-                            <i class="ti ti-file me-2 text-primary font-bold"></i>landingpage
-                          </span>
-                        </li>
-                        <li class="py-2">
-                          <span class="font-medium">
-                            <i class="ti ti-file me-2 text-primary font-bold"></i>docs
-                          </span>
-                        </li>
-                        <li class="py-2">
-                          <span class="font-medium">
-                            <i class="ti ti-file me-2 text-primary font-bold"></i>hireus
-                          </span>
-                        </li>
-                        <li class="py-2">
-                          <span class="font-medium">
-                            <i class="ti ti-folder me-2 text-primary font-bold"></i>discount-code
-                          </span>
-                        </li>
-                        <li class="py-2">
-                          <span class="font-medium">
-                            <i class="ti ti-folder me-2 text-primary font-bold"></i>package
-                          </span>
-                          <ul class="ps-3 ps-md-5 list-unstyled">
-                            <li class="py-2">
-                              <span class="font-medium text-muted">
-                                <i class="ti ti-folder me-2 text-primary font-bold"></i>src
-                              </span>
-                              <ul class="ps-3 ps-md-5 list-unstyled">
-                                <li class="py-2">
-                                  <span class="font-medium text-muted">
-                                    <i class="ti ti-folder me-2 text-primary font-bold"></i>app
-                                  </span>
-                                  <ul class="ps-3 ps-md-5 list-unstyled">
-                                    <li class="py-2">
-                                      <span class="text-muted">
-                                        <i class="ti ti-folder me-2 text-primary font-bold"></i>(DashboardLayout)
-                                      </span>
-                                      <span class="fs-9 text-muted ms-4">(Contains all the pages)</span>
-                                      <ul class="ps-3 ps-md-5 list-unstyled">
-                                        <li class="py-2">
-                                          <span class="text-muted">
-                                            <i class="ti ti-folder me-2 text-primary font-bold"></i>icons
-                                          </span>
-                                        </li>
-                                        <li class="py-2">
-                                          <span class="text-muted"><i
-                                              class="ti ti-folder me-2 text-primary font-bold"></i>layout
-                                          </span>
-                                          <span class="fs-9 text-muted ms-4">
-                                            (It has header and sidebar component of
-                                            Vertical and Horizontal Layout)
-                                          </span>
-                                        </li>
-                                        <li class="py-2">
-                                          <span class="text-muted">
-                                            <i class="ti ti-folder me-2 text-primary font-bold"></i>sample-page
-                                          </span>
-                                        </li>
-                                        <li class="py-2">
-                                          <span class="text-muted">
-                                            <i class="ti ti-folder me-2 text-primary font-bold"></i>ui
-                                          </span>
-                                        </li>
-                                        <li class="py-2">
-                                          <span class="text-muted">
-                                            <i class="ti ti-folder me-2 text-primary font-bold"></i>layout.tsx
-                                          </span>
-                                        </li>
-                                        <li class="py-2">
-                                          <span class="text-muted">
-                                            <i class="ti ti-folder me-2 text-primary font-bold"></i>page.tsx
-                                          </span>
-                                        </li>
-                                      </ul>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="text-muted">
-                                        <i class="ti ti-folder me-2 text-primary font-bold"></i>auth
-                                      </span>
-                                      <span class="fs-9 text-muted ms-4">(All auth pages)</span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="text-muted">
-                                        <i class="ti ti-folder me-2 text-primary font-bold"></i>components
-                                      </span>
-                                      <span class="fs-9 text-muted ms-4">(All components)</span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="text-muted">
-                                        <i class="ti ti-folder me-2 text-primary font-bold"></i>css
-                                      </span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="text-muted">
-                                        <i class="ti ti-folder me-2 text-primary font-bold"></i>layout.tsx
-                                      </span>
-                                    </li>
-                                    <li class="py-2">
-                                      <span class="text-muted">
-                                        <i class="ti ti-folder me-2 text-primary font-bold"></i>not-found.tsx
-                                      </span>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li class="py-2">
-                                  <span class="font-medium text-muted">
-                                    <i class="ti ti-folder me-2 text-primary font-bold"></i>utils
-                                    <span class="fs-9 text-muted ms-4">(Custom theme)</span>
-                                  </span>
-                                </li>
-                              </ul>
-                            </li>
-                            <li class="py-2">
-                              <span class="font-medium text-muted">
-                                <i class="ti ti-folder me-2 text-primary font-bold"></i>next.config.js
-                              </span>
-                            </li>
-                            <li class="py-2">
-                              <span class="font-medium text-muted">
-                                <i class="ti ti-folder me-2 text-primary font-bold"></i>package.json
-                              </span>
-                            </li>
-                            <li class="py-2">
-                              <span class="font-medium text-muted">
-                                <i class="ti ti-folder me-2 text-primary font-bold"></i>tsconfig.json
-                              </span>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                  <h4 class="font-weight-medium">
+                    Spike NextJs Dashboard
+                  </h4>
+                <pre class="">
+                  <code class="language-plaintext">
+📦
+│
+├──📄 landingpage
+├──📄 docs
+├──📄 hireus
+├──📁 discount-code
+├──📁 package
+|  ├──📁 src
+|  |  ├──📁 app
+|  |  |  ├──📁 (DashboardLayout) (Contains all the pages) 
+|  |  |  |  ├──📁 icons
+|  |  |  |  ├──📁 layout (It has header and sidebar component of Vertical and Horizontal Layout)
+|  |  |  |  ├──📁 sample-page
+|  |  |  |  ├──📁 ui
+|  |  |  |  ├──📁 layout.tsx
+|  |  |  |  ├──📁 page.tsx
+|  |  |  ├──📁 auth (All auth pages)
+|  |  |  ├──📁 components (All components)
+|  |  |  ├──📁 css
+|  |  |  ├──📁 layout.tsx
+|  |  |  ├──📁 not-found.tsx
+|  |  ├──📁 utils (Custom theme)
+|  ├──📁 next.config.js
+|  ├──📁 package.json
+|  ├──📁 tsconfig.json
+                  </code>
+                </pre>
                 </div>
               </div>
             </div>
