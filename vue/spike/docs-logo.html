@@ -60,16 +60,18 @@
               <i class="ti ti-chevron-down fs-4 ms-1"></i></a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>NuxtJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>Tailwind Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>Tailwind Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376"
@@ -87,22 +89,24 @@
               </li>
             </ul>
           </div>
-  
+
           <div class="dropdown">
             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary d-flex align-items-center"><i
                 class="ti ti-shopping-cart me-2 fs-4"></i> Buy Now<i class="ti ti-chevron-down fs-4 ms-1"></i></a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>Angular Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>NuxtJs Preview</a>
               </li>
               <li>
-                <a class="dropdown-item" href="https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376"
-                  target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>Tailwind Preview</a>
+                <a class="dropdown-item"
+                  href="https://www.wrappixel.com/templates/spike-tailwind-admin-template/?ref=376" target="_blank"><i
+                    class="ti ti-external-link me-2 fs-4"></i>Tailwind Preview</a>
               </li>
               <li>
                 <a class="dropdown-item" href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/?ref=376"
@@ -440,26 +444,107 @@
                 <div class="p-3">
                   <div class="mt-4 card">
                     <div class="card-body">
-                      <h4 class="card-title">Change Logo</h4>
+                      <h4 class="card-title">Change light Logo</h4>
                       <h5 class="card-subtitle mt-2 text-muted mb-4">
                         To change logo :
-                        <span class="text-dark font-medium">/src/layouts/full/logo/Logo.vue</span>
+                        <span class="text-dark font-medium">packages/main/src/layouts/full/logo/LogoLight.vue</span>
                       </h5>
                       <div class="border-2 border-start border-primary bg-light rounded p-3">
-                        Put the logo image into the /assets/images/logos folder.
+                        Put the logo image into the /images/logos folder.
+                      </div>
+                      <pre>
+                            <code class="language-js py-0">
+&lt;script setup lang=&quot;ts&quot;>
+import { RouterLink } from 'vue-router';
+import logo from '@/assets/images/logos/logo-light.svg';
+&lt;/script>
+&lt;template&gt;
+  &lt;div class="logo"&gt;
+      &lt;RouterLink to="/"&gt;
+          &lt;img :src="logo" alt="home" /&gt;
+      &lt;/RouterLink&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+              </code>
+                                </pre>
+                    </div>
+                  </div>
+                  <div class="mt-4 card">
+                    <div class="card-body">
+                      <h4 class="card-title">Change Dark Logo</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        To change logo :
+                        <span class="text-dark font-medium">packages/main/src/layouts/full/logo/LogoDark.vue</span>
+                      </h5>
+                      <div class="border-2 border-start border-primary bg-light rounded p-3">
+                        Put the logo image into the /images/logos folder.
+                      </div>
+                      <pre>
+                            <code class="language-js py-0">
+&lt;script setup lang="ts"&gt;
+  import { RouterLink } from 'vue-router';
+  import logo from '@/assets/images/logos/logo-dark.svg';
+&lt;/script&gt;
+&lt;template&gt;
+    &lt;div class="logo"&gt;
+      &lt;RouterLink to="/"&gt;
+          &lt;img :src="logo" alt="home" /&gt;
+      &lt;/RouterLink&gt;
+    &lt;/div&gt;
+&lt;/template&lt;
+              </code>
+                                </pre>
+                    </div>
+                  </div>
+                  <div class="mt-4 card">
+                    <div class="card-body">
+                      <h4 class="card-title">Change Light RTL Logo</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        To change logo :
+                        <span class="text-dark font-medium">packages/main/src/layouts/full/logo/LogoLightRtl.vue</span>
+                      </h5>
+                      <div class="border-2 border-start border-primary bg-light rounded p-3">
+                        Put the logo image into the /images/logos folder.
                       </div>
                       <pre>
                             <code class="language-js py-0">
 &lt;script setup lang=&quot;ts&quot;&gt;
   import { RouterLink } from 'vue-router';
-  import Logoimg from '@/assets/images/logos/logo.svg';
+  import logo from '@/assets/images/logos/logo-light-rtl.svg';
 &lt;/script&gt;
-&lt;template>
-  &lt;div class="logo">
-      &lt;RouterLink to=&quot;/&quot;&gt;
-        &lt;img :src=&quot;Logoimg&quot; alt=&quot;home&quot; /&gt;
-      &lt;/RouterLink&gt;
-  &lt;/div&gt;
+&lt;template&gt;
+    &lt;div class=&quot;logo&quot;&gt;
+        &lt;RouterLink to="/"&gt;
+            &lt;img :src=&quot;logo&quot; alt=&quot;home&quot;/&gt;
+        &lt;/RouterLink&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+              </code>
+                                </pre>
+                    </div>
+                  </div>
+                  <div class="mt-4 card">
+                    <div class="card-body">
+                      <h4 class="card-title">Change Dark RTL Logo</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        To change logo :
+                        <span class="text-dark font-medium">packages/main/src/layouts/full/logo/LogoDarkRtl.vue</span>
+                      </h5>
+                      <div class="border-2 border-start border-primary bg-light rounded p-3">
+                        Put the logo image into the /images/logos folder.
+                      </div>
+                      <pre>
+                            <code class="language-js py-0">
+&lt;script setup lang=&quot;ts&quot;&gt;
+  import { RouterLink } from 'vue-router';
+  import logo from '@/assets/images/logos/logo-dark-rtl.svg';
+&lt;/script&gt;
+&lt;template&gt;
+    &lt;div class=&quot;logo&quot;&gt;
+        &lt;RouterLink to=&quot;/&quot;&gt;
+            &lt;img :src=&quot;logo&quot; alt=&quot;home&quot;/&gt;
+        &lt;/RouterLink&gt;
+    &lt;/div&gt;
 &lt;/template&gt;
               </code>
                                 </pre>

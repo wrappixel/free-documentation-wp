@@ -84,10 +84,10 @@
                   href="https://www.wrappixel.com/templates/materialm-admin-dashboard-template/?ref=376"
                   target="_blank"><i class="ti ti-external-link me-2 fs-4"></i>Bootstrap Preview</a>
               </li>
-  
+
             </ul>
           </div>
-  
+
           <div class="dropdown">
             <a href="#" data-bs-toggle="dropdown" class="btn btn-primary d-flex align-items-center"><i
                 class="ti ti-shopping-cart me-2 fs-4"></i> Buy Now<i class="ti ti-chevron-down fs-4 ms-1"></i></a>
@@ -438,26 +438,54 @@
                 <div class="p-3">
                   <div class="mt-4 card">
                     <div class="card-body">
-                      <h4 class="card-title">Change Logo</h4>
+                      <h4 class="card-title">Change light Logo</h4>
                       <h5 class="card-subtitle mt-2 text-muted mb-4">
                         To change logo :
-                        <span class="text-dark font-medium">/src/layouts/full/logo/Logo.vue</span>
+                        <span class="text-dark font-medium">packages/main/src/layouts/full/logo/LogoLight.vue</span>
                       </h5>
                       <div class="border-2 border-start border-primary bg-light rounded p-3">
-                        Put the logo image into the /assets/images/logos folder.
+                        Put the logo image into the /images/logos folder.
                       </div>
                       <pre>
                             <code class="language-js py-0">
-&lt;script setup lang=&quot;ts&quot;&gt;
-  import { RouterLink } from 'vue-router';
-&lt;/script&gt;
-&lt;template>
-  &lt;div class="logo">
-      &lt;RouterLink to=&quot;/&quot;&gt;
-        &lt;img src="@/assets/images/logos/logolight.svg"/&gt;
-      &lt;/RouterLink&gt;
-  &lt;/div&gt;
-&lt;/template&gt;
+        &lt;script setup lang=&quot;ts&quot;>
+        import { RouterLink } from 'vue-router';
+        import LightLogo from '@/assets/images/logos/light-logo.svg';
+        &lt;/script>
+        &lt;template&gt;
+          &lt;div class="logo lh-normal"&gt;
+              &lt;RouterLink to="/"&gt;
+                  &lt;img :src="LightLogo" alt="home" /&gt;
+              &lt;/RouterLink&gt;
+          &lt;/div&gt;
+        &lt;/template&gt;
+              </code>
+                                </pre>
+                    </div>
+                  </div>
+                  <div class="mt-4 card">
+                    <div class="card-body">
+                      <h4 class="card-title">Change Dark Logo</h4>
+                      <h5 class="card-subtitle mt-2 text-muted mb-4">
+                        To change logo :
+                        <span class="text-dark font-medium">packages/main/src/layouts/full/logo/LogoDark.vue</span>
+                      </h5>
+                      <div class="border-2 border-start border-primary bg-light rounded p-3">
+                        Put the logo image into the /images/logos folder.
+                      </div>
+                      <pre>
+                            <code class="language-js py-0">
+        &lt;script setup lang="ts"&gt;
+          import { RouterLink } from 'vue-router';
+          import DarkLogo  from '@/assets/images/logos/dark-logo.svg';
+        &lt;/script&gt;
+        &lt;template&gt;
+            &lt;div class="logo lh-normal"&gt;
+              &lt;RouterLink to="/"&gt;
+                  &lt;img :src="DarkLogo" alt="home" /&gt;
+              &lt;/RouterLink&gt;
+            &lt;/div&gt;
+        &lt;/template&lt;
               </code>
                                 </pre>
                     </div>
