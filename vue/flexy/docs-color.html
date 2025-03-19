@@ -7,14 +7,14 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords"
-    content="Adminmart.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Flexy admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
+    content="WrapPixel.com, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Flexy admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, material design, material dashboard bootstrap 5 dashboard template" />
   <meta name="description"
     content="Flexy is powerful and clean admin dashboard template, inpired from Google's Material Design" />
   <meta name="robots" content="noindex,nofollow" />
-  <title>Flexy Admin Template by Adminmart.com</title>
+  <title>Flexy Admin Template by WrapPixel.com</title>
   <link rel="canonical" href="https://www.wrappixel.com/templates/flexy-vuejs-admin-free/" />
   <!-- Favicon icon -->
-  <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/flexy/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="15x15" href="../../styles/dist/images/flexy/favicon-orange.ico" />
   <!-- This page css -->
   <!-- Custom CSS -->
   <link rel="stylesheet" href="../../styles/assets/simplebar/simplebar/dist/simplebar.css" />
@@ -237,7 +237,7 @@
                 <li class="sidebar-item">
                   <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html"><i
                       class="ti ti-link me-3 fs-4"></i>
-                      API Calls
+                    API Calls
                     <span class="badge bg-secondary f-s-12">PRO</span></a>
                 </li>
                 <li class="sidebar-item">
@@ -357,7 +357,7 @@
                   <li class="sidebar-item">
                     <a class="nav-link sidebar-link d-flex align-items-center" href="docs-api-calls.html"><i
                         class="ti ti-link me-3 fs-4"></i>
-                        API Calls
+                      API Calls
                       <span class="badge bg-secondary f-s-12">PRO</span></a>
                   </li>
 
@@ -450,40 +450,222 @@
                         <span class="text-dark font-medium">theme/LightTheme.ts</span>
                       </h5>
                       <pre>
-                        <code class="language-js py-0 hljs javascript">
-const BLUE_THEME: ThemeTypes = {
-  name: 'BLUE_THEME',
-  dark: false,
-  variables: {
-      'border-color': '#e5eaef'
-      'border-opacity': 1,
-  },
-  colors: {
-      primary: '#1e88e5',
-      secondary: '#0cb9c5',
-      info: '#539BFF',
-      success: '#13DEB9',
-      accent: '#FFAB91',
-      warning: '#FFAE1F',
-      error: '#FA896B',
-      lightprimary: '#ECF2FF',
-      lightsecondary: '#E8F7FF',
-      lightsuccess: '#E6FFFA',
-      lighterror: '#FDEDE8',
-      lightwarning: '#FEF5E5',
-      textPrimary: '#2A3547',
-      textSecondary: '#2A3547',
-      borderColor: '#e5eaef',
-      inputBorder: '#DFE5EF',
-      containerBg: '#ffffff',
-      background: '#ffffff',
-      hoverColor: '#f6f9fc',
-      surface: '#fff',
-      'on-surface-variant': '#fff',
-      grey100: '#F2F6FA',
-      grey200: '#EAEFF4'
-  }
+                            <code class="language-js py-0">
+import type { ThemeTypes } from '@/types/themeTypes/ThemeType';
+const ORANGE_THEME: ThemeTypes = {
+    name: 'ORANGE_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#fb9678',
+        secondary: '#03c9d7',
+        info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#fce6ed',
+        lightsecondary: '#EDFBF7',
+        lightsuccess: '#E6FFFA',
+        lighterror: '#FDEDE8',
+        lightwarning: '#FEF5E5',
+        lightinfo:'#EBF3FE',
+        textPrimary: '#11142d',
+        textSecondary: '#777e89',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f6f6f6',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        'on-surface-variant': '#fff',
+        grey100: '#F2F6FA',
+        grey200: '#EAEFF4'
+    }
 };
+
+
+const BLUE_THEME: ThemeTypes = {
+    name: 'BLUE_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#1e4db7',
+        secondary: '#1a97f5',
+        info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#E8EDF8',
+        lightsecondary: '#E8F4FE',
+        lightsuccess: '#EBFAF2',
+        lighterror: '#FDF3F5',
+        lightwarning: '#FFF4E5',
+        lightinfo:'#E6F4FF',
+        textPrimary: '#11142d',
+        textSecondary: '#777e89',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#F6F8FB',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        'on-surface-variant': '#fff',
+        grey100: '#F2F6FA',
+        grey200: '#EAEFF4'
+    }
+};
+
+const AQUA_THEME: ThemeTypes = {
+    name: 'AQUA_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0074BA',
+        secondary: '#47D7BC',
+        info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#EFF9FF',
+        lightsecondary: '#EDFBF7',
+        lightsuccess: '#E6FFFA',
+        lighterror: '#FDEDE8',
+        lightinfo:'#EBF3FE',
+        lightwarning: '#FEF5E5',
+        textPrimary: '#11142d',
+        textSecondary: '#777e89',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f6f6f6',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        'on-surface-variant': '#fff',
+        grey100: '#F2F6FA',
+        grey200: '#EAEFF4'
+    }
+};
+
+const PURPLE_THEME: ThemeTypes = {
+    name: 'PURPLE_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#763EBD',
+        secondary: '#95CFD5',
+        info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#F2ECF9',
+        lightsecondary: '#EDF8FA',
+        lightsuccess: '#E6FFFA',
+        lighterror: '#FDEDE8',
+        lightinfo:'#EBF3FE',
+        lightwarning: '#FEF5E5',
+        textPrimary: '#11142d',
+        textSecondary: '#777e89',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f6f6f6',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        'on-surface-variant': '#fff',
+        grey100: '#F2F6FA',
+        grey200: '#EAEFF4'
+    }
+};
+
+const GREEN_THEME: ThemeTypes = {
+    name: 'GREEN_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0A7EA4',
+        secondary: '#CCDA4E',
+        info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#F4F9FB',
+        lightsecondary: '#FAFBEF',
+        lightsuccess: '#E6FFFA',
+        lighterror: '#FDEDE8',
+        lightinfo:'#EBF3FE',
+        lightwarning: '#FEF5E5',
+        textPrimary: '#11142d',
+        textSecondary: '#777e89',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f6f6f6',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        'on-surface-variant': '#fff',
+        grey100: '#F2F6FA',
+        grey200: '#EAEFF4'
+    }
+};
+
+const RED_THEME: ThemeTypes = {
+    name: 'RED_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#5e244d',
+        secondary: '#ff5c8e',
+        info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#EFE4EB',
+        lightsecondary: '#FFF5F2',
+        lightsuccess: '#E6FFFA',
+        lighterror: '#FDEDE8',
+        lightinfo:'#EBF3FE',
+        lightwarning: '#FEF5E5',
+        textPrimary: '#11142d',
+        textSecondary: '#777e89',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f6f6f6',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        'on-surface-variant': '#fff',
+        grey100: '#F2F6FA',
+        grey200: '#EAEFF4'
+    }
+};
+
+
+
+export { BLUE_THEME, AQUA_THEME, ORANGE_THEME, PURPLE_THEME, GREEN_THEME, RED_THEME };
                                     </code>
                                 </pre>
                     </div>
@@ -497,42 +679,223 @@ const BLUE_THEME: ThemeTypes = {
                         For any change in colors :
                         <span class="text-dark font-medium">theme/DarkTheme.ts</span>
                       </h5>
-                      <pre>                    <code class="language-js py-0 hljs javascript">
-const DARK_BLUE_THEME: ThemeTypes = {
-  name: 'DARK_BLUE_THEME',
-  dark: true,
-  variables: {
-      'border-color': '#333F55',
-      'border-opacity': 1,
-  },
-  colors: {
-      primary: '#1e88e5',
-      secondary: '#0cb9c5',
-      info: '#539BFF',
-      success: '#13DEB9',
-      accent: '#FA896B',
-      warning: '#FFAE1F',
-      error: '#FA896B',
-      lightprimary: '#253662',
-      lightsecondary: '#1C455D',
-      lightsuccess: '#1B3C48',
-      lighterror: '#4B313D',
-      lightwarning: '#4D3A2A',
-      textPrimary: '#EAEFF4',
-      textSecondary: '#7C8FAC',
-      borderColor: '#333F55',
-      inputBorder: '#465670',
-      containerBg: '#2a3447',
-      background: '#2a3447',
-      hoverColor: '#333f55',
-      surface: '#2a3447',
-      'on-surface-variant': '#2a3447',
-      grey100: '#333F55',
-      grey200: '#465670'
-  }
+                      <pre>
+                        <code class="language-js py-0">
+import type { ThemeTypes } from '@/types/themeTypes/ThemeType';
+const DARK_ORANGE_THEME: ThemeTypes = {
+    name: 'DARK_ORANGE_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#fb9678',
+        secondary: '#03c9d7',
+         info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#402E32',
+        lightsecondary: '#082E45',
+        lightsuccess: '#1B3C48',
+        lighterror: '#4B313D',
+        lightwarning: '#4D3A2A',
+        lightinfo:'#223662',
+        textPrimary: '#EAEFF4',
+        textSecondary: '#7C8FAC',
+        borderColor: '#333F55',
+        inputBorder: '#465670',
+        containerBg: '#171c23',
+        background: '#171c23',
+        hoverColor: '#333f55',
+        surface: '#171c23',
+        'on-surface-variant': '#171c23',
+        grey100: '#333F55',
+        grey200: '#465670'
+    }
 };
-                                    </code>
-                                </pre>
+const DARK_BLUE_THEME: ThemeTypes = {
+    name: 'DARK_BLUE_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#1e4db7',
+        secondary: '#1a97f5',
+         info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#273042',
+        lightsecondary: '#1C455D',
+        lightsuccess: '#1B3C48',
+        lighterror: '#4B313D',
+        lightwarning: '#4D3A2A',
+        lightinfo:'#223662',
+        textPrimary: '#EAEFF4',
+        textSecondary: '#7C8FAC',
+        borderColor: '#333F55',
+        inputBorder: '#465670',
+        containerBg: '#171c23',
+        background: '#171c23',
+        hoverColor: '#333f55',
+        surface: '#171c23',
+        'on-surface-variant': '#171c23',
+        grey100: '#333F55',
+        grey200: '#465670'
+    }
+};
+
+const DARK_AQUA_THEME: ThemeTypes = {
+    name: 'DARK_AQUA_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0074BA',
+        secondary: '#47D7BC',
+         info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#103247',
+        lightsecondary: '#0C4339',
+        lightsuccess: '#1B3C48',
+        lighterror: '#4B313D',
+        lightinfo:'#223662',
+        lightwarning: '#4D3A2A',
+        textPrimary: '#EAEFF4',
+        textSecondary: '#7C8FAC',
+        borderColor: '#333F55',
+        inputBorder: '#465670',
+        containerBg: '#171c23',
+        background: '#171c23',
+        hoverColor: '#333f55',
+        surface: '#171c23',
+        'on-surface-variant': '#171c23',
+        grey100: '#333F55',
+        grey200: '#465670'
+    }
+};
+
+const DARK_PURPLE_THEME: ThemeTypes = {
+    name: 'DARK_PURPLE_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#763EBD',
+        secondary: '#95CFD5',
+         info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#26153C',
+        lightsecondary: '#09454B',
+        lightsuccess: '#1B3C48',
+        lighterror: '#4B313D',
+        lightinfo:'#223662',
+        lightwarning: '#4D3A2A',
+        textPrimary: '#EAEFF4',
+        textSecondary: '#7C8FAC',
+        borderColor: '#333F55',
+        inputBorder: '#465670',
+        containerBg: '#171c23',
+        background: '#171c23',
+        hoverColor: '#333f55',
+        surface: '#171c23',
+        'on-surface-variant': '#171c23',
+        grey100: '#333F55',
+        grey200: '#465670'
+    }
+};
+
+const DARK_GREEN_THEME: ThemeTypes = {
+    name: 'DARK_GREEN_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0A7EA4',
+        secondary: '#CCDA4E',
+         info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#05313F',
+        lightsecondary: '#282917',
+        lightsuccess: '#1B3C48',
+        lighterror: '#4B313D',
+        lightinfo:'#223662',
+        lightwarning: '#4D3A2A',
+        textPrimary: '#EAEFF4',
+        textSecondary: '#7C8FAC',
+        borderColor: '#333F55',
+        inputBorder: '#465670',
+        containerBg: '#171c23',
+        background: '#171c23',
+        hoverColor: '#333f55',
+        surface: '#171c23',
+        'on-surface-variant': '#171c23',
+        grey100: '#333F55',
+        grey200: '#465670'
+    }
+};
+
+const DARK_RED_THEME: ThemeTypes = {
+    name: 'DARK_RED_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#5e244d',
+        secondary: '#ff5c8e',
+         info: '#539BFF',
+        success: '#05b187',
+        accent: '#FFAB91',
+        warning: '#FFAE1F',
+        error: '#f94d4d',
+        lightprimary: '#231D2A',
+        lightsecondary: '#3E2735',
+        lightsuccess: '#1B3C48',
+        lighterror: '#4B313D',
+        lightinfo:'#223662',
+        lightwarning: '#4D3A2A',
+        textPrimary: '#EAEFF4',
+        textSecondary: '#7C8FAC',
+        borderColor: '#333F55',
+        inputBorder: '#465670',
+        containerBg: '#171c23',
+        background: '#171c23',
+        hoverColor: '#333f55',
+        surface: '#171c23',
+        'on-surface-variant': '#171c23',
+        grey100: '#333F55',
+        grey200: '#465670'
+    }
+};
+
+
+
+export { DARK_BLUE_THEME, DARK_AQUA_THEME, DARK_ORANGE_THEME, DARK_PURPLE_THEME, DARK_GREEN_THEME, DARK_RED_THEME };
+                                </code>
+                            </pre>
                     </div>
                   </div>
                 </div>
@@ -608,7 +971,7 @@ const BLUE_THEME: ThemeTypes = {
       <!-- ============================================================== -->
       <!-- <footer class="footer bg-white text-center">
           All Rights Reserved by Flexy. Designed and Developed by
-          <a href="https://www.Adminmart.com">Adminmart.com</a>
+          <a href="https://www.WrapPixel.com">WrapPixel.com</a>
         </footer> -->
 
       <!-- ============================================================== -->
