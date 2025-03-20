@@ -447,49 +447,242 @@
                       <h4 class="card-title">Override Light Theme Colors</h4>
                       <h5 class="card-subtitle mt-2 text-muted mb-4">
                         For any change in colors :
-                        <span class="text-dark font-medium">theme/LightTheme.ts</span>
+                        <span class="text-dark font-medium">src/theme/LightTheme.ts</span>
                       </h5>
-                      <pre>
-                        <code class="language-js py-0 hljs javascript">
+                      <pre style="max-height: 650px;">
+                            <code class="language-js py-0">
+import type { ThemeTypes } from '@/types/themeTypes/ThemeType';
 const BLUE_THEME: ThemeTypes = {
-  name: 'BLUE_THEME',
-  dark: false,
-  variables: {
-      'border-color': '#e5eaef',
-      'border-opacity': 1,
-  },
-  colors: {
-      primary: '#0085db',
-      secondary: '#707a82',
-      info: '#46caeb',
-      success: '#4bd08b',
-      warning: '#f8c076',
-      error: '#fb977d',
-      indigo:'#8763da',
-      lightprimary: '#e5f3fb',
-      lightinfo:'#e1f5fa',
-      lightsecondary: '#e7ecf0',
-      lightsuccess: '#dffff3',
-      lighterror: '#ffede9',
-      lightwarning: '#fff6ea',
-      lightindigo:'#f1ebff',
-      textPrimary: '#2A3547',
-      textSecondary: '#2A3547',
-      borderColor: '#e5eaef',
-      inputBorder: '#DFE5EF',
-      containerBg: '#ffffff',
-      background: '#f0f5f9',
-      hoverColor: '#f6f9fc',
-      surface: '#fff',
-      grey100: '#707a82',
-      grey200: '#111c2d',
-      darkbg:'#2a3447',
-      bglight:'#f5f8fb',
-      bgdark:'#111c2d'
-     
-  }
+    name: 'BLUE_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0085db',
+        secondary: '#707a82',
+        info: '#46caeb',
+        success: '#4bd08b',
+        warning: '#f8c076',
+        error: '#fb977d',
+        indigo:'#8763da',
+        lightprimary: '#e5f3fb',
+        lightinfo:'#e1f5fa',
+        lightsecondary: '#e7ecf0',
+        lightsuccess: '#dffff3',
+        lighterror: '#ffede9',
+        lightwarning: '#fff6ea',
+        lightindigo:'#f1ebff',
+        textPrimary: '#2A3547',
+        textSecondary: '#2A3547',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f0f5f9',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        grey100: '#707a82',
+        grey200: '#111c2d',
+        darkbg:'#2a3447',
+        bglight:'#f5f8fb',
+        bgdark:'#111c2d'
+       
+    }
 };
-          </code>
+
+const AQUA_THEME: ThemeTypes = {
+    name: 'AQUA_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0074BA',
+        secondary: '#47D7BC',
+        info: '#46caeb',
+        success: '#4bd08b',
+        warning: '#f8c076',
+        error: '#fb977d',
+        indigo:'#8763da',
+        lightprimary: '#e5f3fb',
+        lightinfo:'#e1f5fa',
+        lightsecondary: '#e7ecf0',
+        lightsuccess: '#dffff3',
+        lighterror: '#ffede9',
+        lightwarning: '#fff6ea',
+        lightindigo:'#f1ebff',
+        textPrimary: '#2A3547',
+        textSecondary: '#2A3547',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f0f5f9',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        grey100: '#707a82',
+        grey200: '#111c2d',
+        darkbg:'#2a3447',
+        bglight:'#f5f8fb',
+        bgdark:'#111c2d'
+    }
+};
+
+const PURPLE_THEME: ThemeTypes = {
+    name: 'PURPLE_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#763EBD',
+        secondary: '#95CFD5',
+        info: '#46caeb',
+        success: '#4bd08b',
+        warning: '#f8c076',
+        error: '#fb977d',
+        indigo:'#8763da',
+        lightprimary: '#e5f3fb',
+        lightinfo:'#e1f5fa',
+        lightsecondary: '#e7ecf0',
+        lightsuccess: '#dffff3',
+        lighterror: '#ffede9',
+        lightwarning: '#fff6ea',
+        lightindigo:'#f1ebff',
+        textPrimary: '#2A3547',
+        textSecondary: '#2A3547',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f0f5f9',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        grey100: '#707a82',
+        grey200: '#111c2d',
+        darkbg:'#2a3447',
+        bglight:'#f5f8fb',
+        bgdark:'#111c2d'
+    }
+};
+
+const GREEN_THEME: ThemeTypes = {
+    name: 'GREEN_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0A7EA4',
+        secondary: '#CCDA4E',
+        info: '#46caeb',
+        success: '#4bd08b',
+        warning: '#f8c076',
+        error: '#fb977d',
+        indigo:'#8763da',
+        lightprimary: '#e5f3fb',
+        lightinfo:'#e1f5fa',
+        lightsecondary: '#e7ecf0',
+        lightsuccess: '#dffff3',
+        lighterror: '#ffede9',
+        lightwarning: '#fff6ea',
+        lightindigo:'#f1ebff',
+        textPrimary: '#2A3547',
+        textSecondary: '#2A3547',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f0f5f9',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        grey100: '#707a82',
+        grey200: '#111c2d',
+        darkbg:'#2a3447',
+        bglight:'#f5f8fb',
+        bgdark:'#111c2d'
+    }
+};
+
+const CYAN_THEME: ThemeTypes = {
+    name: 'CYAN_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#01C0C8',
+        secondary: '#FB9678',
+        info: '#46caeb',
+        success: '#4bd08b',
+        warning: '#f8c076',
+        error: '#fb977d',
+        indigo:'#8763da',
+        lightprimary: '#e5f3fb',
+        lightinfo:'#e1f5fa',
+        lightsecondary: '#e7ecf0',
+        lightsuccess: '#dffff3',
+        lighterror: '#ffede9',
+        lightwarning: '#fff6ea',
+        lightindigo:'#f1ebff',
+        textPrimary: '#2A3547',
+        textSecondary: '#2A3547',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f0f5f9',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        grey100: '#707a82',
+        grey200: '#111c2d',
+        darkbg:'#2a3447',
+        bglight:'#f5f8fb',
+        bgdark:'#111c2d'
+    }
+};
+
+const ORANGE_THEME: ThemeTypes = {
+    name: 'ORANGE_THEME',
+    dark: false,
+    variables: {
+        'border-color': '#e5eaef',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#FA896B',
+        secondary: '#0074BA',
+        info: '#46caeb',
+        success: '#4bd08b',
+        warning: '#f8c076',
+        error: '#fb977d',
+        indigo:'#8763da',
+        lightprimary: '#e5f3fb',
+        lightinfo:'#e1f5fa',
+        lightsecondary: '#e7ecf0',
+        lightsuccess: '#dffff3',
+        lighterror: '#ffede9',
+        lightwarning: '#fff6ea',
+        lightindigo:'#f1ebff',
+        textPrimary: '#2A3547',
+        textSecondary: '#2A3547',
+        borderColor: '#e5eaef',
+        inputBorder: '#DFE5EF',
+        containerBg: '#ffffff',
+        background: '#f0f5f9',
+        hoverColor: '#f6f9fc',
+        surface: '#fff',
+        grey100: '#707a82',
+        grey200: '#111c2d',
+        darkbg:'#2a3447',
+        bglight:'#f5f8fb',
+        bgdark:'#111c2d'
+    }
+};
+
+export { BLUE_THEME, AQUA_THEME, ORANGE_THEME, PURPLE_THEME, GREEN_THEME, CYAN_THEME };
+                                    </code>
                                 </pre>
                     </div>
                   </div>
@@ -500,46 +693,240 @@ const BLUE_THEME: ThemeTypes = {
                       </h4>
                       <h5 class="card-subtitle mt-2 text-muted mb-4">
                         For any change in colors :
-                        <span class="text-dark font-medium">theme/DarkTheme.ts</span>
+                        <span class="text-dark font-medium">src/theme/DarkTheme.ts</span>
                       </h5>
-                      <pre>                    <code class="language-js py-0 hljs javascript">
+                      <pre style="max-height: 650px;">
+                            <code class="language-js py-0">
+import type { ThemeTypes } from '@/types/themeTypes/ThemeType';
 const DARK_BLUE_THEME: ThemeTypes = {
-  name: 'DARK_BLUE_THEME',
-  dark: true,
-  variables: {
-      'border-color': '#182D41', 
-      'border-opacity': 1,
-  },
-  colors: {
-      primary: '#0085db', 
-      secondary: '#7C8FAC',
-      info: '#5AC8FA',
-      success: '#09C97F', 
-      warning: '#F8B15D', 
-      error: '#FB977D', 
-      indigo:'#8763DA',  
-      lightprimary: '#1b394f',
-      lightinfo:'#1a3247', 
-      lightsecondary: '#2f3f4c',
-      lightsuccess: '#102d35', 
-      lighterror: '#72483d',
-      lightwarning: '#282b32', 
-      textPrimary: '#EAEFF4',
-      textSecondary: '#fff',
-      lightindigo:'#1d233e',  
-      borderColor: '#182D41', 
-      inputBorder: '#465670',
-      containerBg: '#111C2D', 
-      background: '#16293e', 
-      hoverColor: '#333f55',
-      surface: '#111C2D', 
-      grey100: '#7C8FAC', 
-      grey200: '#EAEFF4', 
-      darkbg:'#111936',
-      bglight:'#16293e',
-      bgdark:'#16293e'
-  }
+    name: 'DARK_BLUE_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#182D41', 
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0085db', 
+        secondary: '#7C8FAC',
+        info: '#5AC8FA',
+        success: '#09C97F', 
+        warning: '#F8B15D', 
+        error: '#FB977D', 
+        indigo:'#8763DA',  
+        lightprimary: '#1b394f',
+        lightinfo:'#1a3247', 
+        lightsecondary: '#2f3f4c',
+        lightsuccess: '#102d35', 
+        lighterror: '#72483d',
+        lightwarning: '#282b32', 
+        textPrimary: '#EAEFF4',
+        textSecondary: '#fff',
+        lightindigo:'#1d233e',  
+        borderColor: '#182D41', 
+        inputBorder: '#465670',
+        containerBg: '#111C2D', 
+        background: '#16293e', 
+        hoverColor: '#333f55',
+        surface: '#111C2D', 
+        grey100: '#7C8FAC', 
+        grey200: '#EAEFF4', 
+        darkbg:'#111936',
+        bglight:'#16293e',
+        bgdark:'#16293e'
+    }
 };
+
+const DARK_AQUA_THEME: ThemeTypes = {
+    name: 'DARK_AQUA_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0074BA',
+        secondary: '#47D7BC',
+        info: '#5AC8FA',
+        success: '#09C97F', 
+        warning: '#F8B15D', 
+        error: '#FB977D', 
+        indigo:'#8763DA',  
+        lightprimary: '#1b394f',
+        lightinfo:'#1a3247', 
+        lightsecondary: '#2f3f4c',
+        lightsuccess: '#102d35', 
+        lighterror: '#72483d',
+        lightwarning: '#282b32', 
+        textPrimary: '#EAEFF4',
+        textSecondary: '#fff',
+        lightindigo:'#1d233e',  
+        borderColor: '#182D41', 
+        inputBorder: '#465670',
+        containerBg: '#111C2D', 
+        background: '#16293e', 
+        hoverColor: '#333f55',
+        surface: '#111C2D', 
+        grey100: '#7C8FAC', 
+        grey200: '#EAEFF4', 
+        darkbg:'#111936',
+        bglight:'#16293e',
+        bgdark:'#16293e'
+    }
+};
+
+const DARK_PURPLE_THEME: ThemeTypes = {
+    name: 'DARK_PURPLE_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#763EBD',
+        secondary: '#95CFD5',
+        info: '#5AC8FA',
+        success: '#09C97F', 
+        warning: '#F8B15D', 
+        error: '#FB977D', 
+        indigo:'#8763DA',  
+        lightprimary: '#1b394f',
+        lightinfo:'#1a3247', 
+        lightsecondary: '#2f3f4c',
+        lightsuccess: '#102d35', 
+        lighterror: '#72483d',
+        lightwarning: '#282b32', 
+        textPrimary: '#EAEFF4',
+        textSecondary: '#fff',
+        lightindigo:'#1d233e',  
+        borderColor: '#182D41', 
+        inputBorder: '#465670',
+        containerBg: '#111C2D', 
+        background: '#16293e', 
+        hoverColor: '#333f55',
+        surface: '#111C2D', 
+        grey100: '#7C8FAC', 
+        grey200: '#EAEFF4', 
+        darkbg:'#111936',
+        bglight:'#16293e',
+        bgdark:'#16293e'
+    }
+};
+
+const DARK_GREEN_THEME: ThemeTypes = {
+    name: 'DARK_GREEN_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#0A7EA4',
+        secondary: '#CCDA4E',
+        info: '#5AC8FA',
+        success: '#09C97F', 
+        warning: '#F8B15D', 
+        error: '#FB977D', 
+        indigo:'#8763DA',  
+        lightprimary: '#1b394f',
+        lightinfo:'#1a3247', 
+        lightsecondary: '#2f3f4c',
+        lightsuccess: '#102d35', 
+        lighterror: '#72483d',
+        lightwarning: '#282b32', 
+        textPrimary: '#EAEFF4',
+        textSecondary: '#fff',
+        lightindigo:'#1d233e',  
+        borderColor: '#182D41', 
+        inputBorder: '#465670',
+        containerBg: '#111C2D', 
+        background: '#16293e', 
+        hoverColor: '#333f55',
+        surface: '#111C2D', 
+        grey100: '#7C8FAC', 
+        grey200: '#EAEFF4', 
+        darkbg:'#111936',
+        bglight:'#16293e',
+        bgdark:'#16293e'
+    }
+};
+
+const DARK_CYAN_THEME: ThemeTypes = {
+    name: 'DARK_CYAN_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#01C0C8',
+        secondary: '#FB9678',
+        info: '#5AC8FA',
+        success: '#09C97F', 
+        warning: '#F8B15D', 
+        error: '#FB977D', 
+        indigo:'#8763DA',  
+        lightprimary: '#1b394f',
+        lightinfo:'#1a3247', 
+        lightsecondary: '#2f3f4c',
+        lightsuccess: '#102d35', 
+        lighterror: '#72483d',
+        lightwarning: '#282b32', 
+        textPrimary: '#EAEFF4',
+        textSecondary: '#fff',
+        lightindigo:'#1d233e',  
+        borderColor: '#182D41', 
+        inputBorder: '#465670',
+        containerBg: '#111C2D', 
+        background: '#16293e', 
+        hoverColor: '#333f55',
+        surface: '#111C2D', 
+        grey100: '#7C8FAC', 
+        grey200: '#EAEFF4', 
+        darkbg:'#111936',
+        bglight:'#16293e',
+        bgdark:'#16293e'
+    }
+};
+
+const DARK_ORANGE_THEME: ThemeTypes = {
+    name: 'DARK_ORANGE_THEME',
+    dark: true,
+    variables: {
+        'border-color': '#333F55',
+        'border-opacity': 1,
+    },
+    colors: {
+        primary: '#FA896B',
+        secondary: '#0074BA',
+        info: '#5AC8FA',
+        success: '#09C97F', 
+        warning: '#F8B15D', 
+        error: '#FB977D', 
+        indigo:'#8763DA',  
+        lightprimary: '#1b394f',
+        lightinfo:'#1a3247', 
+        lightsecondary: '#2f3f4c',
+        lightsuccess: '#102d35', 
+        lighterror: '#72483d',
+        lightwarning: '#282b32', 
+        textPrimary: '#EAEFF4',
+        textSecondary: '#fff',
+        lightindigo:'#1d233e',  
+        borderColor: '#182D41', 
+        inputBorder: '#465670',
+        containerBg: '#111C2D', 
+        background: '#16293e', 
+        hoverColor: '#333f55',
+        surface: '#111C2D', 
+        grey100: '#7C8FAC', 
+        grey200: '#EAEFF4', 
+        darkbg:'#111936',
+        bglight:'#16293e',
+        bgdark:'#16293e'
+    }
+};
+
+export { DARK_BLUE_THEME, DARK_AQUA_THEME, DARK_ORANGE_THEME, DARK_PURPLE_THEME, DARK_GREEN_THEME, DARK_CYAN_THEME };
                                     </code>
                                 </pre>
                     </div>
