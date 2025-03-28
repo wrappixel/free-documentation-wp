@@ -447,19 +447,23 @@
                         Put the logo image into the /public/images/logos folder.
                       </div>
                       <pre>                    <code class="language-js py-0 hljs javascript">
-&quot;use client&quot;
+&quot;use client&quot;;
 import React from "react";
 import Image from "next/image";
-import Logo from "/public/images/logos/logo.svg";
+import Logo from "/public/images/logos/dark-logo.svg";
+import Logowhite from "/public/images/logos/light-logo.svg";
 import Link from "next/link";
 
 const FullLogo = () =&gt; {
   return (
     &lt;Link href=&quot;/&quot;&gt;
-      &lt;Image src={Logo} alt=&quot;logo&quot; className=&quot;block&quot; /&gt;
+      &lt;Image src={Logo} alt=&quot;logo&quot; ClassName=&quot;block dark:hidden rtl:scale-x-[-1]&quot; /&gt;
+      &lt;Image src={Logowhite} alt=&quot;logo&quot; ClassName=&quot;block dark:hidden rtl:scale-x-[-1]&quot; /&gt;
     &lt;/Link&gt;
   );
 };
+
+export default FullLogo;
                                     </code>
                                 </pre>
                     </div>
@@ -482,18 +486,16 @@ const FullLogo = () =&gt; {
                       </div>
                       <pre>
                             <code class="language-js py-0">
-&quot;use client&quot;;
+&quot;use client&quot;
 import React from "react";
 import Image from "next/image";
-import Logo from "/public/images/logos/dark-logo.svg";
-import Logowhite from "/public/images/logos/light-logo.svg";
+import Logo from "/public/images/logos/logo.svg";
 import Link from "next/link";
 
-const Logo = () =&gt; {
+const FullLogo = () =&gt; {
   return (
     &lt;Link href=&quot;/&quot;&gt;
-      &lt;Image src={Logo} alt=&quot;logo&quot; ClassName=&quot;block dark:hidden rtl:scale-x-[-1]&quot; /&gt;
-      &lt;Image src={Logowhite} alt=&quot;logo&quot; ClassName=&quot;block dark:hidden rtl:scale-x-[-1]&quot; /&gt;
+      &lt;Image src={Logo} alt=&quot;logo&quot; className=&quot;block&quot; /&gt;
     &lt;/Link&gt;
   );
 };
