@@ -98,6 +98,23 @@ $h4-font-size: 18px !default;
 $h5-font-size: 16px !default;
 $h6-font-size: 14px !default;
 
+// Font Sizes
+$font-sizes: (
+  1: 10px,
+  2: 12px,
+  3: 14px,
+  4: 16px,
+  5: 18px,
+  6: 20px,
+  7: 24px,
+  8: 30px,
+  9: 36px,
+  10: 40px,
+  11: 13px,
+  12: 15px,
+  14: 48px,
+  ) !default;
+
 // Buttons
 $btn-secondary-border: $gray-300;
 
@@ -110,6 +127,22 @@ $border-radius-lg: 15px !default;
 // Define common padding and border radius sizes and more.
 $border-width: 1px !default;
 $border-color: #e5eaef !default;
+
+// Spacer
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: 12px,
+  7: 30px,
+  8: 10px,
+  9: 20px,
+  10: 18px,
+  ) !default;
 
 // Card
 $card-spacer-y: 30px !default;
