@@ -15444,7 +15444,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 991.98px) {
   .app-topstrip {
-    top: 62px;
+    top: 70px;
   }
 }
 .app-topstrip .text-linear-gradient {
@@ -15498,11 +15498,6 @@ textarea.form-control-lg {
   margin-top: 73px;
 }
 @media (max-width: 991.98px) {
-  .docs#main-wrapper {
-    margin-top: 150px;
-  }
-}
-@media (max-width: 575.98px) {
   .docs#main-wrapper {
     margin-top: 160px;
   }
